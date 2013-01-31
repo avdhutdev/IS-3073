@@ -12,6 +12,9 @@
 
     Private Sub clearButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles clearButton.Click
         messageOutPutBox.Text = String.Empty
+        nameTextBox.Text = ""
+        messageTextBox.Clear()
+        nameTextBox.Focus()
     End Sub
 
     Private Sub blackRadio_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles blackRadio.CheckedChanged

@@ -178,9 +178,11 @@ Partial Class Message_Formatter
         '
         'PictureBox1
         '
-        Me.PictureBox1.Location = New System.Drawing.Point(45, 307)
+        Me.PictureBox1.Image = Global.ch02_inClass.My.Resources.Resources.Crispy_bacon_1_1_
+        Me.PictureBox1.Location = New System.Drawing.Point(45, 289)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(100, 50)
+        Me.PictureBox1.Size = New System.Drawing.Size(165, 108)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 10
         Me.PictureBox1.TabStop = False
         '
