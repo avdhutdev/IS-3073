@@ -17,7 +17,9 @@
             totalDecimal = priceDecimal * quantityInteger
             totalTextBox.Text = totalDecimal.ToString()
             orderTotalDecimal += totalDecimal
-            orderTotalTextBox.Text = orderTotalDecimal.ToString("c")
+            Dim orderTotal As Decimal
+            orderTotal = orderTotalDecimal.ToString("c")
+            MessageBox.Show("Number of Orders" & "Total Order: " & orderTotal, "Totals", MessageBoxButtons.OK)
         Catch ex As Exception
             MessageBox.Show("Error in textboxes 1", "input error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
         End Try
@@ -30,10 +32,16 @@
     End Sub
 
     Private Sub clearButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles clearButton.Click
-        priceTextBox.Text = ""
-        quantityTextBox.Text = ""
-        totalTextBox.Text = ""
-        priceTextBox.Focus()
+        Dim clearButonDialogResult As DialogResult
+        clearButonDialogResult = MessageBox.Show("Clear the current order figures?", "clear Order", _
+             MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2, MessageBoxOptions.RightAlign)
+
+        If clearButonDialogResult = DialogResult.Yes 
+            priceTextBox.Text = ""
+            quantityTextBox.Text = ""
+            totalTextBox.Text = ""
+            priceTextBox.Focus()
+        End If
     End Sub
 
     Private Sub quantityTextBox_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles quantityTextBox.TextChanged
