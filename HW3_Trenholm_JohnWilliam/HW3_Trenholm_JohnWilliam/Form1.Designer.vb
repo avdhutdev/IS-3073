@@ -38,38 +38,43 @@ Partial Class vbMailOrder
         Me.exitButton = New System.Windows.Forms.Button
         Me.PrintForm1 = New Microsoft.VisualBasic.PowerPacks.Printing.PrintForm(Me.components)
         Me.GroupBox2 = New System.Windows.Forms.GroupBox
+        Me.Label10 = New System.Windows.Forms.Label
+        Me.salesTaxBox = New System.Windows.Forms.Label
+        Me.Label8 = New System.Windows.Forms.Label
+        Me.dollarOutput = New System.Windows.Forms.Label
         Me.MaskedTextBox1 = New System.Windows.Forms.MaskedTextBox
         Me.stateTextBox = New System.Windows.Forms.TextBox
         Me.GroupBox1 = New System.Windows.Forms.GroupBox
-        Me.GroupBox3 = New System.Windows.Forms.GroupBox
+        Me.TextBox4 = New System.Windows.Forms.TextBox
+        Me.TextBox3 = New System.Windows.Forms.TextBox
+        Me.TextBox2 = New System.Windows.Forms.TextBox
         Me.Label2 = New System.Windows.Forms.Label
         Me.TextBox1 = New System.Windows.Forms.TextBox
         Me.Label3 = New System.Windows.Forms.Label
         Me.Label5 = New System.Windows.Forms.Label
         Me.Label7 = New System.Windows.Forms.Label
-        Me.TextBox2 = New System.Windows.Forms.TextBox
-        Me.TextBox3 = New System.Windows.Forms.TextBox
-        Me.TextBox4 = New System.Windows.Forms.TextBox
-        Me.MaskedTextBox2 = New System.Windows.Forms.MaskedTextBox
-        Me.MaskedTextBox3 = New System.Windows.Forms.MaskedTextBox
-        Me.MaskedTextBox4 = New System.Windows.Forms.MaskedTextBox
-        Me.MaskedTextBox5 = New System.Windows.Forms.MaskedTextBox
-        Me.MaskedTextBox6 = New System.Windows.Forms.MaskedTextBox
-        Me.MaskedTextBox7 = New System.Windows.Forms.MaskedTextBox
-        Me.MaskedTextBox8 = New System.Windows.Forms.MaskedTextBox
-        Me.MaskedTextBox9 = New System.Windows.Forms.MaskedTextBox
-        Me.dollarOutput = New System.Windows.Forms.Label
-        Me.Label8 = New System.Windows.Forms.Label
-        Me.salesTaxBox = New System.Windows.Forms.Label
-        Me.Label10 = New System.Windows.Forms.Label
-        Me.shippingHandlingOutputBox = New System.Windows.Forms.Label
-        Me.salesTaxOutputBox = New System.Windows.Forms.Label
-        Me.superTotalOutputBox = New System.Windows.Forms.Label
-        Me.totalOutputAmount = New System.Windows.Forms.Label
-        Me.MaskedTextBox10 = New System.Windows.Forms.MaskedTextBox
-        Me.MaskedTextBox11 = New System.Windows.Forms.MaskedTextBox
-        Me.MaskedTextBox12 = New System.Windows.Forms.MaskedTextBox
-        Me.MaskedTextBox13 = New System.Windows.Forms.MaskedTextBox
+        Me.GroupBox3 = New System.Windows.Forms.GroupBox
+        Me.Button1 = New System.Windows.Forms.Button
+        Me.Button2 = New System.Windows.Forms.Button
+        Me.Button3 = New System.Windows.Forms.Button
+        Me.Button4 = New System.Windows.Forms.Button
+        Me.TextBox5 = New System.Windows.Forms.TextBox
+        Me.TextBox6 = New System.Windows.Forms.TextBox
+        Me.TextBox7 = New System.Windows.Forms.TextBox
+        Me.TextBox8 = New System.Windows.Forms.TextBox
+        Me.TextBox9 = New System.Windows.Forms.TextBox
+        Me.TextBox10 = New System.Windows.Forms.TextBox
+        Me.TextBox11 = New System.Windows.Forms.TextBox
+        Me.TextBox12 = New System.Windows.Forms.TextBox
+        Me.TextBox13 = New System.Windows.Forms.TextBox
+        Me.TextBox14 = New System.Windows.Forms.TextBox
+        Me.TextBox15 = New System.Windows.Forms.TextBox
+        Me.TextBox16 = New System.Windows.Forms.TextBox
+        Me.Label9 = New System.Windows.Forms.Label
+        Me.TextBox17 = New System.Windows.Forms.TextBox
+        Me.TextBox18 = New System.Windows.Forms.TextBox
+        Me.TextBox19 = New System.Windows.Forms.TextBox
+        Me.TextBox20 = New System.Windows.Forms.TextBox
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
@@ -78,102 +83,114 @@ Partial Class vbMailOrder
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(6, 26)
+        Me.Label1.Location = New System.Drawing.Point(36, 28)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(113, 17)
+        Me.Label1.Size = New System.Drawing.Size(85, 13)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Customer Name:"
         '
         'nameBox
         '
-        Me.nameBox.Location = New System.Drawing.Point(258, 26)
+        Me.nameBox.Location = New System.Drawing.Point(207, 25)
+        Me.nameBox.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.nameBox.Name = "nameBox"
-        Me.nameBox.Size = New System.Drawing.Size(100, 22)
+        Me.nameBox.Size = New System.Drawing.Size(76, 20)
         Me.nameBox.TabIndex = 1
         '
         'zipCode
         '
         Me.zipCode.AutoSize = True
-        Me.zipCode.Location = New System.Drawing.Point(6, 177)
+        Me.zipCode.Location = New System.Drawing.Point(36, 151)
+        Me.zipCode.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.zipCode.Name = "zipCode"
-        Me.zipCode.Size = New System.Drawing.Size(61, 17)
+        Me.zipCode.Size = New System.Drawing.Size(47, 13)
         Me.zipCode.TabIndex = 8
         Me.zipCode.Text = "ZipCode"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(6, 142)
+        Me.Label4.Location = New System.Drawing.Point(36, 122)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(41, 17)
+        Me.Label4.Size = New System.Drawing.Size(32, 13)
         Me.Label4.TabIndex = 6
         Me.Label4.Text = "State"
         '
         'cityBox
         '
-        Me.cityBox.Location = New System.Drawing.Point(258, 106)
+        Me.cityBox.Location = New System.Drawing.Point(207, 90)
+        Me.cityBox.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.cityBox.Name = "cityBox"
-        Me.cityBox.Size = New System.Drawing.Size(100, 22)
+        Me.cityBox.Size = New System.Drawing.Size(76, 20)
         Me.cityBox.TabIndex = 5
         '
         'City
         '
         Me.City.AutoSize = True
-        Me.City.Location = New System.Drawing.Point(6, 106)
+        Me.City.Location = New System.Drawing.Point(36, 93)
+        Me.City.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.City.Name = "City"
-        Me.City.Size = New System.Drawing.Size(31, 17)
+        Me.City.Size = New System.Drawing.Size(24, 13)
         Me.City.TabIndex = 4
         Me.City.Text = "City"
         '
         'addressBox
         '
-        Me.addressBox.Location = New System.Drawing.Point(258, 68)
+        Me.addressBox.Location = New System.Drawing.Point(207, 59)
+        Me.addressBox.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.addressBox.Name = "addressBox"
-        Me.addressBox.Size = New System.Drawing.Size(100, 22)
+        Me.addressBox.Size = New System.Drawing.Size(76, 20)
         Me.addressBox.TabIndex = 3
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(6, 68)
+        Me.Label6.Location = New System.Drawing.Point(36, 62)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(60, 17)
+        Me.Label6.Size = New System.Drawing.Size(45, 13)
         Me.Label6.TabIndex = 2
         Me.Label6.Text = "Address"
         '
         'summaryButton
         '
-        Me.summaryButton.Location = New System.Drawing.Point(200, 454)
+        Me.summaryButton.Location = New System.Drawing.Point(59, 415)
+        Me.summaryButton.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.summaryButton.Name = "summaryButton"
-        Me.summaryButton.Size = New System.Drawing.Size(313, 43)
+        Me.summaryButton.Size = New System.Drawing.Size(235, 35)
         Me.summaryButton.TabIndex = 3
-        Me.summaryButton.Text = "Summary"
+        Me.summaryButton.Text = "&Summary"
         Me.summaryButton.UseVisualStyleBackColor = True
         '
         'clearButton
         '
         Me.clearButton.DialogResult = System.Windows.Forms.DialogResult.Cancel
-        Me.clearButton.Location = New System.Drawing.Point(200, 528)
+        Me.clearButton.Location = New System.Drawing.Point(419, 415)
+        Me.clearButton.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.clearButton.Name = "clearButton"
-        Me.clearButton.Size = New System.Drawing.Size(75, 23)
+        Me.clearButton.Size = New System.Drawing.Size(73, 35)
         Me.clearButton.TabIndex = 4
         Me.clearButton.Text = "Clear"
         Me.clearButton.UseVisualStyleBackColor = True
         '
         'printPreviewButton
         '
-        Me.printPreviewButton.Location = New System.Drawing.Point(310, 528)
+        Me.printPreviewButton.Location = New System.Drawing.Point(509, 415)
+        Me.printPreviewButton.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.printPreviewButton.Name = "printPreviewButton"
-        Me.printPreviewButton.Size = New System.Drawing.Size(103, 23)
+        Me.printPreviewButton.Size = New System.Drawing.Size(87, 35)
         Me.printPreviewButton.TabIndex = 5
         Me.printPreviewButton.Text = "&Print Preview"
         Me.printPreviewButton.UseVisualStyleBackColor = True
         '
         'exitButton
         '
-        Me.exitButton.Location = New System.Drawing.Point(438, 528)
+        Me.exitButton.Location = New System.Drawing.Point(609, 415)
+        Me.exitButton.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.exitButton.Name = "exitButton"
-        Me.exitButton.Size = New System.Drawing.Size(75, 23)
+        Me.exitButton.Size = New System.Drawing.Size(71, 35)
         Me.exitButton.TabIndex = 6
         Me.exitButton.Text = "&Exit"
         Me.exitButton.UseVisualStyleBackColor = True
@@ -188,50 +205,99 @@ Partial Class vbMailOrder
         '
         'GroupBox2
         '
-        Me.GroupBox2.Controls.Add(Me.shippingHandlingOutputBox)
-        Me.GroupBox2.Controls.Add(Me.salesTaxOutputBox)
-        Me.GroupBox2.Controls.Add(Me.superTotalOutputBox)
-        Me.GroupBox2.Controls.Add(Me.totalOutputAmount)
+        Me.GroupBox2.Controls.Add(Me.TextBox20)
+        Me.GroupBox2.Controls.Add(Me.TextBox19)
+        Me.GroupBox2.Controls.Add(Me.TextBox18)
+        Me.GroupBox2.Controls.Add(Me.TextBox17)
         Me.GroupBox2.Controls.Add(Me.Label10)
         Me.GroupBox2.Controls.Add(Me.salesTaxBox)
         Me.GroupBox2.Controls.Add(Me.Label8)
         Me.GroupBox2.Controls.Add(Me.dollarOutput)
-        Me.GroupBox2.Location = New System.Drawing.Point(71, 248)
+        Me.GroupBox2.Location = New System.Drawing.Point(374, 11)
+        Me.GroupBox2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(593, 181)
+        Me.GroupBox2.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox2.Size = New System.Drawing.Size(327, 180)
         Me.GroupBox2.TabIndex = 2
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Order Summary"
         '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Location = New System.Drawing.Point(26, 95)
+        Me.Label10.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(114, 13)
+        Me.Label10.TabIndex = 4
+        Me.Label10.Text = "Shipping and Handling"
+        '
+        'salesTaxBox
+        '
+        Me.salesTaxBox.AutoSize = True
+        Me.salesTaxBox.Location = New System.Drawing.Point(26, 64)
+        Me.salesTaxBox.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.salesTaxBox.Name = "salesTaxBox"
+        Me.salesTaxBox.Size = New System.Drawing.Size(51, 13)
+        Me.salesTaxBox.TabIndex = 2
+        Me.salesTaxBox.Text = "SalesTax"
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Location = New System.Drawing.Point(26, 131)
+        Me.Label8.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(93, 13)
+        Me.Label8.TabIndex = 6
+        Me.Label8.Text = "Total Amount Due"
+        '
+        'dollarOutput
+        '
+        Me.dollarOutput.AutoSize = True
+        Me.dollarOutput.Location = New System.Drawing.Point(26, 34)
+        Me.dollarOutput.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.dollarOutput.Name = "dollarOutput"
+        Me.dollarOutput.Size = New System.Drawing.Size(104, 13)
+        Me.dollarOutput.TabIndex = 0
+        Me.dollarOutput.Text = "Dollar Ammount Due"
+        '
         'MaskedTextBox1
         '
-        Me.MaskedTextBox1.Location = New System.Drawing.Point(258, 177)
+        Me.MaskedTextBox1.Location = New System.Drawing.Point(207, 148)
+        Me.MaskedTextBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.MaskedTextBox1.Mask = "00000-9999"
         Me.MaskedTextBox1.Name = "MaskedTextBox1"
-        Me.MaskedTextBox1.Size = New System.Drawing.Size(100, 22)
+        Me.MaskedTextBox1.Size = New System.Drawing.Size(76, 20)
         Me.MaskedTextBox1.TabIndex = 9
         '
         'stateTextBox
         '
-        Me.stateTextBox.Location = New System.Drawing.Point(258, 142)
+        Me.stateTextBox.Location = New System.Drawing.Point(207, 119)
+        Me.stateTextBox.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.stateTextBox.Name = "stateTextBox"
-        Me.stateTextBox.Size = New System.Drawing.Size(100, 22)
+        Me.stateTextBox.Size = New System.Drawing.Size(39, 20)
         Me.stateTextBox.TabIndex = 7
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.MaskedTextBox13)
-        Me.GroupBox1.Controls.Add(Me.MaskedTextBox12)
-        Me.GroupBox1.Controls.Add(Me.MaskedTextBox11)
-        Me.GroupBox1.Controls.Add(Me.MaskedTextBox10)
-        Me.GroupBox1.Controls.Add(Me.MaskedTextBox8)
-        Me.GroupBox1.Controls.Add(Me.MaskedTextBox9)
-        Me.GroupBox1.Controls.Add(Me.MaskedTextBox6)
-        Me.GroupBox1.Controls.Add(Me.MaskedTextBox7)
-        Me.GroupBox1.Controls.Add(Me.MaskedTextBox5)
-        Me.GroupBox1.Controls.Add(Me.MaskedTextBox4)
-        Me.GroupBox1.Controls.Add(Me.MaskedTextBox3)
-        Me.GroupBox1.Controls.Add(Me.MaskedTextBox2)
+        Me.GroupBox1.Controls.Add(Me.TextBox13)
+        Me.GroupBox1.Controls.Add(Me.TextBox9)
+        Me.GroupBox1.Controls.Add(Me.TextBox10)
+        Me.GroupBox1.Controls.Add(Me.TextBox14)
+        Me.GroupBox1.Controls.Add(Me.TextBox11)
+        Me.GroupBox1.Controls.Add(Me.TextBox12)
+        Me.GroupBox1.Controls.Add(Me.TextBox15)
+        Me.GroupBox1.Controls.Add(Me.TextBox5)
+        Me.GroupBox1.Controls.Add(Me.TextBox6)
+        Me.GroupBox1.Controls.Add(Me.TextBox16)
+        Me.GroupBox1.Controls.Add(Me.TextBox7)
+        Me.GroupBox1.Controls.Add(Me.TextBox8)
+        Me.GroupBox1.Controls.Add(Me.Button4)
+        Me.GroupBox1.Controls.Add(Me.Button3)
+        Me.GroupBox1.Controls.Add(Me.Button2)
+        Me.GroupBox1.Controls.Add(Me.Button1)
+        Me.GroupBox1.Controls.Add(Me.Label7)
         Me.GroupBox1.Controls.Add(Me.TextBox4)
         Me.GroupBox1.Controls.Add(Me.TextBox3)
         Me.GroupBox1.Controls.Add(Me.TextBox2)
@@ -239,13 +305,87 @@ Partial Class vbMailOrder
         Me.GroupBox1.Controls.Add(Me.TextBox1)
         Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Controls.Add(Me.Label5)
-        Me.GroupBox1.Controls.Add(Me.Label7)
-        Me.GroupBox1.Location = New System.Drawing.Point(487, 12)
+        Me.GroupBox1.Location = New System.Drawing.Point(55, 195)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(576, 209)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox1.Size = New System.Drawing.Size(646, 186)
         Me.GroupBox1.TabIndex = 1
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Items"
+        '
+        'TextBox4
+        '
+        Me.TextBox4.Location = New System.Drawing.Point(75, 148)
+        Me.TextBox4.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TextBox4.Name = "TextBox4"
+        Me.TextBox4.Size = New System.Drawing.Size(190, 20)
+        Me.TextBox4.TabIndex = 16
+        '
+        'TextBox3
+        '
+        Me.TextBox3.Location = New System.Drawing.Point(75, 121)
+        Me.TextBox3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TextBox3.Name = "TextBox3"
+        Me.TextBox3.Size = New System.Drawing.Size(190, 20)
+        Me.TextBox3.TabIndex = 12
+        '
+        'TextBox2
+        '
+        Me.TextBox2.Location = New System.Drawing.Point(75, 92)
+        Me.TextBox2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(190, 20)
+        Me.TextBox2.TabIndex = 8
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(73, 31)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(60, 13)
+        Me.Label2.TabIndex = 0
+        Me.Label2.Text = "Description"
+        Me.Label2.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(73, 53)
+        Me.TextBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(190, 20)
+        Me.TextBox1.TabIndex = 4
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(398, 31)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(31, 13)
+        Me.Label3.TabIndex = 3
+        Me.Label3.Text = "Price"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(316, 31)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(41, 13)
+        Me.Label5.TabIndex = 2
+        Me.Label5.Text = "Weight"
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(4, 31)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(46, 13)
+        Me.Label7.TabIndex = 1
+        Me.Label7.Text = "Quantity"
         '
         'GroupBox3
         '
@@ -259,249 +399,196 @@ Partial Class vbMailOrder
         Me.GroupBox3.Controls.Add(Me.cityBox)
         Me.GroupBox3.Controls.Add(Me.addressBox)
         Me.GroupBox3.Controls.Add(Me.Label6)
-        Me.GroupBox3.Location = New System.Drawing.Point(64, 12)
+        Me.GroupBox3.Location = New System.Drawing.Point(48, 10)
+        Me.GroupBox3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(397, 209)
+        Me.GroupBox3.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox3.Size = New System.Drawing.Size(298, 181)
         Me.GroupBox3.TabIndex = 0
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Customer Info"
         '
-        'Label2
+        'Button1
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(2, 35)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(79, 17)
-        Me.Label2.TabIndex = 0
-        Me.Label2.Text = "Description"
-        Me.Label2.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.Button1.Location = New System.Drawing.Point(479, 50)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.TabIndex = 20
+        Me.Button1.Text = "Add this Item"
+        Me.Button1.UseVisualStyleBackColor = True
         '
-        'TextBox1
+        'Button2
         '
-        Me.TextBox1.Location = New System.Drawing.Point(5, 68)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(252, 22)
-        Me.TextBox1.TabIndex = 4
+        Me.Button2.Location = New System.Drawing.Point(479, 115)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(75, 23)
+        Me.Button2.TabIndex = 21
+        Me.Button2.Text = "Remove"
+        Me.Button2.UseVisualStyleBackColor = True
         '
-        'Label3
+        'Button3
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(449, 26)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(40, 17)
-        Me.Label3.TabIndex = 3
-        Me.Label3.Text = "Price"
+        Me.Button3.Location = New System.Drawing.Point(479, 86)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(75, 23)
+        Me.Button3.TabIndex = 22
+        Me.Button3.Text = "Remove"
+        Me.Button3.UseVisualStyleBackColor = True
         '
-        'Label5
+        'Button4
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(364, 26)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(52, 17)
-        Me.Label5.TabIndex = 2
-        Me.Label5.Text = "Weight"
+        Me.Button4.Location = New System.Drawing.Point(479, 146)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(75, 23)
+        Me.Button4.TabIndex = 23
+        Me.Button4.Text = "Remove"
+        Me.Button4.UseVisualStyleBackColor = True
         '
-        'Label7
+        'TextBox5
         '
-        Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(279, 26)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(61, 17)
-        Me.Label7.TabIndex = 1
-        Me.Label7.Text = "Quantity"
+        Me.TextBox5.Location = New System.Drawing.Point(305, 142)
+        Me.TextBox5.Margin = New System.Windows.Forms.Padding(2)
+        Me.TextBox5.Name = "TextBox5"
+        Me.TextBox5.Size = New System.Drawing.Size(52, 20)
+        Me.TextBox5.TabIndex = 27
         '
-        'TextBox2
+        'TextBox6
         '
-        Me.TextBox2.Location = New System.Drawing.Point(6, 103)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(252, 22)
-        Me.TextBox2.TabIndex = 8
+        Me.TextBox6.Location = New System.Drawing.Point(305, 115)
+        Me.TextBox6.Margin = New System.Windows.Forms.Padding(2)
+        Me.TextBox6.Name = "TextBox6"
+        Me.TextBox6.Size = New System.Drawing.Size(52, 20)
+        Me.TextBox6.TabIndex = 26
         '
-        'TextBox3
+        'TextBox7
         '
-        Me.TextBox3.Location = New System.Drawing.Point(5, 137)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(252, 22)
-        Me.TextBox3.TabIndex = 12
+        Me.TextBox7.Location = New System.Drawing.Point(305, 86)
+        Me.TextBox7.Margin = New System.Windows.Forms.Padding(2)
+        Me.TextBox7.Name = "TextBox7"
+        Me.TextBox7.Size = New System.Drawing.Size(52, 20)
+        Me.TextBox7.TabIndex = 25
         '
-        'TextBox4
+        'TextBox8
         '
-        Me.TextBox4.Location = New System.Drawing.Point(6, 172)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(252, 22)
-        Me.TextBox4.TabIndex = 16
+        Me.TextBox8.Location = New System.Drawing.Point(305, 53)
+        Me.TextBox8.Margin = New System.Windows.Forms.Padding(2)
+        Me.TextBox8.Name = "TextBox8"
+        Me.TextBox8.Size = New System.Drawing.Size(52, 20)
+        Me.TextBox8.TabIndex = 24
         '
-        'MaskedTextBox2
+        'TextBox9
         '
-        Me.MaskedTextBox2.Location = New System.Drawing.Point(282, 68)
-        Me.MaskedTextBox2.Mask = "00"
-        Me.MaskedTextBox2.Name = "MaskedTextBox2"
-        Me.MaskedTextBox2.Size = New System.Drawing.Size(58, 22)
-        Me.MaskedTextBox2.TabIndex = 5
+        Me.TextBox9.Location = New System.Drawing.Point(7, 148)
+        Me.TextBox9.Margin = New System.Windows.Forms.Padding(2)
+        Me.TextBox9.Name = "TextBox9"
+        Me.TextBox9.Size = New System.Drawing.Size(43, 20)
+        Me.TextBox9.TabIndex = 31
         '
-        'MaskedTextBox3
+        'TextBox10
         '
-        Me.MaskedTextBox3.Location = New System.Drawing.Point(367, 68)
-        Me.MaskedTextBox3.Mask = "00.0"
-        Me.MaskedTextBox3.Name = "MaskedTextBox3"
-        Me.MaskedTextBox3.Size = New System.Drawing.Size(68, 22)
-        Me.MaskedTextBox3.TabIndex = 6
+        Me.TextBox10.Location = New System.Drawing.Point(7, 119)
+        Me.TextBox10.Margin = New System.Windows.Forms.Padding(2)
+        Me.TextBox10.Name = "TextBox10"
+        Me.TextBox10.Size = New System.Drawing.Size(43, 20)
+        Me.TextBox10.TabIndex = 30
         '
-        'MaskedTextBox4
+        'TextBox11
         '
-        Me.MaskedTextBox4.Location = New System.Drawing.Point(367, 103)
-        Me.MaskedTextBox4.Mask = "00.0"
-        Me.MaskedTextBox4.Name = "MaskedTextBox4"
-        Me.MaskedTextBox4.Size = New System.Drawing.Size(68, 22)
-        Me.MaskedTextBox4.TabIndex = 10
+        Me.TextBox11.Location = New System.Drawing.Point(7, 90)
+        Me.TextBox11.Margin = New System.Windows.Forms.Padding(2)
+        Me.TextBox11.Name = "TextBox11"
+        Me.TextBox11.Size = New System.Drawing.Size(43, 20)
+        Me.TextBox11.TabIndex = 29
         '
-        'MaskedTextBox5
+        'TextBox12
         '
-        Me.MaskedTextBox5.Location = New System.Drawing.Point(282, 101)
-        Me.MaskedTextBox5.Mask = "00"
-        Me.MaskedTextBox5.Name = "MaskedTextBox5"
-        Me.MaskedTextBox5.Size = New System.Drawing.Size(58, 22)
-        Me.MaskedTextBox5.TabIndex = 9
+        Me.TextBox12.Location = New System.Drawing.Point(7, 53)
+        Me.TextBox12.Margin = New System.Windows.Forms.Padding(2)
+        Me.TextBox12.Name = "TextBox12"
+        Me.TextBox12.Size = New System.Drawing.Size(43, 20)
+        Me.TextBox12.TabIndex = 28
         '
-        'MaskedTextBox6
+        'TextBox13
         '
-        Me.MaskedTextBox6.Location = New System.Drawing.Point(367, 137)
-        Me.MaskedTextBox6.Mask = "00.0"
-        Me.MaskedTextBox6.Name = "MaskedTextBox6"
-        Me.MaskedTextBox6.Size = New System.Drawing.Size(68, 22)
-        Me.MaskedTextBox6.TabIndex = 14
+        Me.TextBox13.Location = New System.Drawing.Point(388, 143)
+        Me.TextBox13.Margin = New System.Windows.Forms.Padding(2)
+        Me.TextBox13.Name = "TextBox13"
+        Me.TextBox13.Size = New System.Drawing.Size(49, 20)
+        Me.TextBox13.TabIndex = 35
         '
-        'MaskedTextBox7
+        'TextBox14
         '
-        Me.MaskedTextBox7.Location = New System.Drawing.Point(282, 139)
-        Me.MaskedTextBox7.Mask = "00"
-        Me.MaskedTextBox7.Name = "MaskedTextBox7"
-        Me.MaskedTextBox7.Size = New System.Drawing.Size(58, 22)
-        Me.MaskedTextBox7.TabIndex = 13
+        Me.TextBox14.Location = New System.Drawing.Point(388, 116)
+        Me.TextBox14.Margin = New System.Windows.Forms.Padding(2)
+        Me.TextBox14.Name = "TextBox14"
+        Me.TextBox14.Size = New System.Drawing.Size(49, 20)
+        Me.TextBox14.TabIndex = 34
         '
-        'MaskedTextBox8
+        'TextBox15
         '
-        Me.MaskedTextBox8.Location = New System.Drawing.Point(367, 172)
-        Me.MaskedTextBox8.Mask = "00.0"
-        Me.MaskedTextBox8.Name = "MaskedTextBox8"
-        Me.MaskedTextBox8.Size = New System.Drawing.Size(68, 22)
-        Me.MaskedTextBox8.TabIndex = 18
+        Me.TextBox15.Location = New System.Drawing.Point(388, 87)
+        Me.TextBox15.Margin = New System.Windows.Forms.Padding(2)
+        Me.TextBox15.Name = "TextBox15"
+        Me.TextBox15.Size = New System.Drawing.Size(49, 20)
+        Me.TextBox15.TabIndex = 33
         '
-        'MaskedTextBox9
+        'TextBox16
         '
-        Me.MaskedTextBox9.Location = New System.Drawing.Point(282, 172)
-        Me.MaskedTextBox9.Mask = "00"
-        Me.MaskedTextBox9.Name = "MaskedTextBox9"
-        Me.MaskedTextBox9.Size = New System.Drawing.Size(58, 22)
-        Me.MaskedTextBox9.TabIndex = 17
+        Me.TextBox16.Location = New System.Drawing.Point(388, 53)
+        Me.TextBox16.Margin = New System.Windows.Forms.Padding(2)
+        Me.TextBox16.Name = "TextBox16"
+        Me.TextBox16.Size = New System.Drawing.Size(49, 20)
+        Me.TextBox16.TabIndex = 32
         '
-        'dollarOutput
+        'Label9
         '
-        Me.dollarOutput.AutoSize = True
-        Me.dollarOutput.Location = New System.Drawing.Point(8, 34)
-        Me.dollarOutput.Name = "dollarOutput"
-        Me.dollarOutput.Size = New System.Drawing.Size(138, 17)
-        Me.dollarOutput.TabIndex = 0
-        Me.dollarOutput.Text = "Dollar Ammount Due"
+        Me.Label9.AutoSize = True
+        Me.Label9.Location = New System.Drawing.Point(546, 457)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(192, 13)
+        Me.Label9.TabIndex = 7
+        Me.Label9.Text = "Programmed by: John-William Trenholm"
         '
-        'Label8
+        'TextBox17
         '
-        Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(8, 134)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(122, 17)
-        Me.Label8.TabIndex = 6
-        Me.Label8.Text = "Total Amount Due"
+        Me.TextBox17.Location = New System.Drawing.Point(160, 27)
+        Me.TextBox17.Name = "TextBox17"
+        Me.TextBox17.ReadOnly = True
+        Me.TextBox17.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox17.TabIndex = 7
         '
-        'salesTaxBox
+        'TextBox18
         '
-        Me.salesTaxBox.AutoSize = True
-        Me.salesTaxBox.Location = New System.Drawing.Point(8, 65)
-        Me.salesTaxBox.Name = "salesTaxBox"
-        Me.salesTaxBox.Size = New System.Drawing.Size(66, 17)
-        Me.salesTaxBox.TabIndex = 2
-        Me.salesTaxBox.Text = "SalesTax"
+        Me.TextBox18.Location = New System.Drawing.Point(160, 61)
+        Me.TextBox18.Name = "TextBox18"
+        Me.TextBox18.ReadOnly = True
+        Me.TextBox18.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox18.TabIndex = 8
         '
-        'Label10
+        'TextBox19
         '
-        Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(6, 100)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(151, 17)
-        Me.Label10.TabIndex = 4
-        Me.Label10.Text = "Shipping and Handling"
+        Me.TextBox19.Location = New System.Drawing.Point(160, 95)
+        Me.TextBox19.Name = "TextBox19"
+        Me.TextBox19.ReadOnly = True
+        Me.TextBox19.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox19.TabIndex = 9
         '
-        'shippingHandlingOutputBox
+        'TextBox20
         '
-        Me.shippingHandlingOutputBox.AutoSize = True
-        Me.shippingHandlingOutputBox.Location = New System.Drawing.Point(246, 100)
-        Me.shippingHandlingOutputBox.Name = "shippingHandlingOutputBox"
-        Me.shippingHandlingOutputBox.Size = New System.Drawing.Size(0, 17)
-        Me.shippingHandlingOutputBox.TabIndex = 5
-        '
-        'salesTaxOutputBox
-        '
-        Me.salesTaxOutputBox.AutoSize = True
-        Me.salesTaxOutputBox.Location = New System.Drawing.Point(248, 65)
-        Me.salesTaxOutputBox.Name = "salesTaxOutputBox"
-        Me.salesTaxOutputBox.Size = New System.Drawing.Size(0, 17)
-        Me.salesTaxOutputBox.TabIndex = 3
-        '
-        'superTotalOutputBox
-        '
-        Me.superTotalOutputBox.AutoSize = True
-        Me.superTotalOutputBox.Location = New System.Drawing.Point(248, 134)
-        Me.superTotalOutputBox.Name = "superTotalOutputBox"
-        Me.superTotalOutputBox.Size = New System.Drawing.Size(0, 17)
-        Me.superTotalOutputBox.TabIndex = 7
-        '
-        'totalOutputAmount
-        '
-        Me.totalOutputAmount.AutoSize = True
-        Me.totalOutputAmount.Location = New System.Drawing.Point(248, 34)
-        Me.totalOutputAmount.Name = "totalOutputAmount"
-        Me.totalOutputAmount.Size = New System.Drawing.Size(0, 17)
-        Me.totalOutputAmount.TabIndex = 1
-        '
-        'MaskedTextBox10
-        '
-        Me.MaskedTextBox10.Location = New System.Drawing.Point(452, 65)
-        Me.MaskedTextBox10.Mask = "$999,999.00"
-        Me.MaskedTextBox10.Name = "MaskedTextBox10"
-        Me.MaskedTextBox10.Size = New System.Drawing.Size(68, 22)
-        Me.MaskedTextBox10.TabIndex = 7
-        '
-        'MaskedTextBox11
-        '
-        Me.MaskedTextBox11.Location = New System.Drawing.Point(452, 106)
-        Me.MaskedTextBox11.Mask = "$999,999.00"
-        Me.MaskedTextBox11.Name = "MaskedTextBox11"
-        Me.MaskedTextBox11.Size = New System.Drawing.Size(68, 22)
-        Me.MaskedTextBox11.TabIndex = 11
-        '
-        'MaskedTextBox12
-        '
-        Me.MaskedTextBox12.Location = New System.Drawing.Point(452, 137)
-        Me.MaskedTextBox12.Mask = "$999,999.00"
-        Me.MaskedTextBox12.Name = "MaskedTextBox12"
-        Me.MaskedTextBox12.Size = New System.Drawing.Size(68, 22)
-        Me.MaskedTextBox12.TabIndex = 15
-        '
-        'MaskedTextBox13
-        '
-        Me.MaskedTextBox13.Location = New System.Drawing.Point(452, 172)
-        Me.MaskedTextBox13.Mask = "$999,999.00"
-        Me.MaskedTextBox13.Name = "MaskedTextBox13"
-        Me.MaskedTextBox13.Size = New System.Drawing.Size(68, 22)
-        Me.MaskedTextBox13.TabIndex = 19
+        Me.TextBox20.Location = New System.Drawing.Point(160, 131)
+        Me.TextBox20.Name = "TextBox20"
+        Me.TextBox20.ReadOnly = True
+        Me.TextBox20.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox20.TabIndex = 10
         '
         'vbMailOrder
         '
         Me.AcceptButton = Me.summaryButton
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.CancelButton = Me.clearButton
-        Me.ClientSize = New System.Drawing.Size(1075, 589)
+        Me.ClientSize = New System.Drawing.Size(750, 479)
+        Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.GroupBox2)
@@ -509,6 +596,7 @@ Partial Class vbMailOrder
         Me.Controls.Add(Me.printPreviewButton)
         Me.Controls.Add(Me.clearButton)
         Me.Controls.Add(Me.summaryButton)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "vbMailOrder"
         Me.Text = "vbMailOrder"
         Me.GroupBox2.ResumeLayout(False)
@@ -518,6 +606,7 @@ Partial Class vbMailOrder
         Me.GroupBox3.ResumeLayout(False)
         Me.GroupBox3.PerformLayout()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
     Friend WithEvents Label1 As System.Windows.Forms.Label
@@ -546,25 +635,30 @@ Partial Class vbMailOrder
     Friend WithEvents TextBox4 As System.Windows.Forms.TextBox
     Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
     Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
-    Friend WithEvents MaskedTextBox8 As System.Windows.Forms.MaskedTextBox
-    Friend WithEvents MaskedTextBox9 As System.Windows.Forms.MaskedTextBox
-    Friend WithEvents MaskedTextBox6 As System.Windows.Forms.MaskedTextBox
-    Friend WithEvents MaskedTextBox7 As System.Windows.Forms.MaskedTextBox
-    Friend WithEvents MaskedTextBox5 As System.Windows.Forms.MaskedTextBox
-    Friend WithEvents MaskedTextBox4 As System.Windows.Forms.MaskedTextBox
-    Friend WithEvents MaskedTextBox3 As System.Windows.Forms.MaskedTextBox
-    Friend WithEvents MaskedTextBox2 As System.Windows.Forms.MaskedTextBox
     Friend WithEvents dollarOutput As System.Windows.Forms.Label
     Friend WithEvents Label10 As System.Windows.Forms.Label
     Friend WithEvents salesTaxBox As System.Windows.Forms.Label
     Friend WithEvents Label8 As System.Windows.Forms.Label
-    Friend WithEvents shippingHandlingOutputBox As System.Windows.Forms.Label
-    Friend WithEvents salesTaxOutputBox As System.Windows.Forms.Label
-    Friend WithEvents superTotalOutputBox As System.Windows.Forms.Label
-    Friend WithEvents totalOutputAmount As System.Windows.Forms.Label
-    Friend WithEvents MaskedTextBox13 As System.Windows.Forms.MaskedTextBox
-    Friend WithEvents MaskedTextBox12 As System.Windows.Forms.MaskedTextBox
-    Friend WithEvents MaskedTextBox11 As System.Windows.Forms.MaskedTextBox
-    Friend WithEvents MaskedTextBox10 As System.Windows.Forms.MaskedTextBox
+    Friend WithEvents Button4 As System.Windows.Forms.Button
+    Friend WithEvents Button3 As System.Windows.Forms.Button
+    Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents TextBox9 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox10 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox11 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox12 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox5 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox6 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox7 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox8 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox13 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox14 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox15 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox16 As System.Windows.Forms.TextBox
+    Friend WithEvents Label9 As System.Windows.Forms.Label
+    Friend WithEvents TextBox20 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox19 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox18 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox17 As System.Windows.Forms.TextBox
 
 End Class
