@@ -49,21 +49,26 @@ Partial Class vbMailOrder
         Me.zipBox = New System.Windows.Forms.MaskedTextBox
         Me.stateTextBox = New System.Windows.Forms.TextBox
         Me.GroupBox1 = New System.Windows.Forms.GroupBox
+        Me.item4PriceBox = New System.Windows.Forms.TextBox
+        Me.item4quantBox = New System.Windows.Forms.TextBox
+        Me.item4WeightBox = New System.Windows.Forms.TextBox
+        Me.removeItem4Button = New System.Windows.Forms.Button
+        Me.item4TextBox = New System.Windows.Forms.TextBox
         Me.item3PriceBox = New System.Windows.Forms.TextBox
         Me.item3quantBox = New System.Windows.Forms.TextBox
         Me.item2quantBox = New System.Windows.Forms.TextBox
         Me.item2PriceBox = New System.Windows.Forms.TextBox
         Me.item1quantBox = New System.Windows.Forms.TextBox
         Me.itemquantBox = New System.Windows.Forms.TextBox
-        Me.ite1PriceBox = New System.Windows.Forms.TextBox
+        Me.item1PriceBox = New System.Windows.Forms.TextBox
         Me.item3WeightBox = New System.Windows.Forms.TextBox
         Me.itemPriceBox = New System.Windows.Forms.TextBox
-        Me.removeItem4Button = New System.Windows.Forms.Button
+        Me.removeItem3Button = New System.Windows.Forms.Button
         Me.item2WeightBox = New System.Windows.Forms.TextBox
-        Me.removeItem2Button = New System.Windows.Forms.Button
+        Me.removeItem1Button = New System.Windows.Forms.Button
         Me.Label5 = New System.Windows.Forms.Label
         Me.itemWeightBox = New System.Windows.Forms.TextBox
-        Me.removeItem3Button = New System.Windows.Forms.Button
+        Me.removeItem2Button = New System.Windows.Forms.Button
         Me.item1WeightBox = New System.Windows.Forms.TextBox
         Me.addItem1Button = New System.Windows.Forms.Button
         Me.Label7 = New System.Windows.Forms.Label
@@ -75,11 +80,6 @@ Partial Class vbMailOrder
         Me.Label3 = New System.Windows.Forms.Label
         Me.GroupBox3 = New System.Windows.Forms.GroupBox
         Me.Label9 = New System.Windows.Forms.Label
-        Me.item4PriceBox = New System.Windows.Forms.TextBox
-        Me.item4quantBox = New System.Windows.Forms.TextBox
-        Me.item4WeightBox = New System.Windows.Forms.TextBox
-        Me.removeItem5Button = New System.Windows.Forms.Button
-        Me.item4TextBox = New System.Windows.Forms.TextBox
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
@@ -317,7 +317,7 @@ Partial Class vbMailOrder
         Me.GroupBox1.Controls.Add(Me.item4PriceBox)
         Me.GroupBox1.Controls.Add(Me.item4quantBox)
         Me.GroupBox1.Controls.Add(Me.item4WeightBox)
-        Me.GroupBox1.Controls.Add(Me.removeItem5Button)
+        Me.GroupBox1.Controls.Add(Me.removeItem4Button)
         Me.GroupBox1.Controls.Add(Me.item4TextBox)
         Me.GroupBox1.Controls.Add(Me.item3PriceBox)
         Me.GroupBox1.Controls.Add(Me.item3quantBox)
@@ -325,15 +325,15 @@ Partial Class vbMailOrder
         Me.GroupBox1.Controls.Add(Me.item2PriceBox)
         Me.GroupBox1.Controls.Add(Me.item1quantBox)
         Me.GroupBox1.Controls.Add(Me.itemquantBox)
-        Me.GroupBox1.Controls.Add(Me.ite1PriceBox)
+        Me.GroupBox1.Controls.Add(Me.item1PriceBox)
         Me.GroupBox1.Controls.Add(Me.item3WeightBox)
         Me.GroupBox1.Controls.Add(Me.itemPriceBox)
-        Me.GroupBox1.Controls.Add(Me.removeItem4Button)
+        Me.GroupBox1.Controls.Add(Me.removeItem3Button)
         Me.GroupBox1.Controls.Add(Me.item2WeightBox)
-        Me.GroupBox1.Controls.Add(Me.removeItem2Button)
+        Me.GroupBox1.Controls.Add(Me.removeItem1Button)
         Me.GroupBox1.Controls.Add(Me.Label5)
         Me.GroupBox1.Controls.Add(Me.itemWeightBox)
-        Me.GroupBox1.Controls.Add(Me.removeItem3Button)
+        Me.GroupBox1.Controls.Add(Me.removeItem2Button)
         Me.GroupBox1.Controls.Add(Me.item1WeightBox)
         Me.GroupBox1.Controls.Add(Me.addItem1Button)
         Me.GroupBox1.Controls.Add(Me.Label7)
@@ -351,6 +351,56 @@ Partial Class vbMailOrder
         Me.GroupBox1.TabIndex = 2
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Items"
+        '
+        'item4PriceBox
+        '
+        Me.item4PriceBox.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.item4PriceBox.Location = New System.Drawing.Point(391, 262)
+        Me.item4PriceBox.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.item4PriceBox.Name = "item4PriceBox"
+        Me.item4PriceBox.ReadOnly = True
+        Me.item4PriceBox.Size = New System.Drawing.Size(64, 22)
+        Me.item4PriceBox.TabIndex = 26
+        '
+        'item4quantBox
+        '
+        Me.item4quantBox.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.item4quantBox.Location = New System.Drawing.Point(9, 261)
+        Me.item4quantBox.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.item4quantBox.Name = "item4quantBox"
+        Me.item4quantBox.ReadOnly = True
+        Me.item4quantBox.Size = New System.Drawing.Size(56, 22)
+        Me.item4quantBox.TabIndex = 24
+        '
+        'item4WeightBox
+        '
+        Me.item4WeightBox.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.item4WeightBox.Location = New System.Drawing.Point(497, 265)
+        Me.item4WeightBox.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.item4WeightBox.Name = "item4WeightBox"
+        Me.item4WeightBox.ReadOnly = True
+        Me.item4WeightBox.Size = New System.Drawing.Size(68, 22)
+        Me.item4WeightBox.TabIndex = 27
+        '
+        'removeItem4Button
+        '
+        Me.removeItem4Button.Location = New System.Drawing.Point(639, 259)
+        Me.removeItem4Button.Margin = New System.Windows.Forms.Padding(4)
+        Me.removeItem4Button.Name = "removeItem4Button"
+        Me.removeItem4Button.Size = New System.Drawing.Size(100, 28)
+        Me.removeItem4Button.TabIndex = 28
+        Me.removeItem4Button.Text = "Remove"
+        Me.removeItem4Button.UseVisualStyleBackColor = True
+        '
+        'item4TextBox
+        '
+        Me.item4TextBox.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.item4TextBox.Location = New System.Drawing.Point(100, 261)
+        Me.item4TextBox.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.item4TextBox.Name = "item4TextBox"
+        Me.item4TextBox.ReadOnly = True
+        Me.item4TextBox.Size = New System.Drawing.Size(252, 22)
+        Me.item4TextBox.TabIndex = 25
         '
         'item3PriceBox
         '
@@ -410,15 +460,15 @@ Partial Class vbMailOrder
         Me.itemquantBox.Size = New System.Drawing.Size(56, 22)
         Me.itemquantBox.TabIndex = 4
         '
-        'ite1PriceBox
+        'item1PriceBox
         '
-        Me.ite1PriceBox.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.ite1PriceBox.Location = New System.Drawing.Point(391, 155)
-        Me.ite1PriceBox.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.ite1PriceBox.Name = "ite1PriceBox"
-        Me.ite1PriceBox.ReadOnly = True
-        Me.ite1PriceBox.Size = New System.Drawing.Size(64, 22)
-        Me.ite1PriceBox.TabIndex = 11
+        Me.item1PriceBox.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.item1PriceBox.Location = New System.Drawing.Point(391, 155)
+        Me.item1PriceBox.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.item1PriceBox.Name = "item1PriceBox"
+        Me.item1PriceBox.ReadOnly = True
+        Me.item1PriceBox.Size = New System.Drawing.Size(64, 22)
+        Me.item1PriceBox.TabIndex = 11
         '
         'item3WeightBox
         '
@@ -438,15 +488,15 @@ Partial Class vbMailOrder
         Me.itemPriceBox.Size = New System.Drawing.Size(64, 22)
         Me.itemPriceBox.TabIndex = 6
         '
-        'removeItem4Button
+        'removeItem3Button
         '
-        Me.removeItem4Button.Location = New System.Drawing.Point(639, 222)
-        Me.removeItem4Button.Margin = New System.Windows.Forms.Padding(4)
-        Me.removeItem4Button.Name = "removeItem4Button"
-        Me.removeItem4Button.Size = New System.Drawing.Size(100, 28)
-        Me.removeItem4Button.TabIndex = 23
-        Me.removeItem4Button.Text = "Remove"
-        Me.removeItem4Button.UseVisualStyleBackColor = True
+        Me.removeItem3Button.Location = New System.Drawing.Point(639, 222)
+        Me.removeItem3Button.Margin = New System.Windows.Forms.Padding(4)
+        Me.removeItem3Button.Name = "removeItem3Button"
+        Me.removeItem3Button.Size = New System.Drawing.Size(100, 28)
+        Me.removeItem3Button.TabIndex = 23
+        Me.removeItem3Button.Text = "Remove"
+        Me.removeItem3Button.UseVisualStyleBackColor = True
         '
         'item2WeightBox
         '
@@ -458,15 +508,15 @@ Partial Class vbMailOrder
         Me.item2WeightBox.Size = New System.Drawing.Size(68, 22)
         Me.item2WeightBox.TabIndex = 17
         '
-        'removeItem2Button
+        'removeItem1Button
         '
-        Me.removeItem2Button.Location = New System.Drawing.Point(639, 148)
-        Me.removeItem2Button.Margin = New System.Windows.Forms.Padding(4)
-        Me.removeItem2Button.Name = "removeItem2Button"
-        Me.removeItem2Button.Size = New System.Drawing.Size(100, 28)
-        Me.removeItem2Button.TabIndex = 13
-        Me.removeItem2Button.Text = "Remove"
-        Me.removeItem2Button.UseVisualStyleBackColor = True
+        Me.removeItem1Button.Location = New System.Drawing.Point(639, 148)
+        Me.removeItem1Button.Margin = New System.Windows.Forms.Padding(4)
+        Me.removeItem1Button.Name = "removeItem1Button"
+        Me.removeItem1Button.Size = New System.Drawing.Size(100, 28)
+        Me.removeItem1Button.TabIndex = 13
+        Me.removeItem1Button.Text = "Remove"
+        Me.removeItem1Button.UseVisualStyleBackColor = True
         '
         'Label5
         '
@@ -485,15 +535,15 @@ Partial Class vbMailOrder
         Me.itemWeightBox.Size = New System.Drawing.Size(68, 22)
         Me.itemWeightBox.TabIndex = 7
         '
-        'removeItem3Button
+        'removeItem2Button
         '
-        Me.removeItem3Button.Location = New System.Drawing.Point(639, 184)
-        Me.removeItem3Button.Margin = New System.Windows.Forms.Padding(4)
-        Me.removeItem3Button.Name = "removeItem3Button"
-        Me.removeItem3Button.Size = New System.Drawing.Size(100, 28)
-        Me.removeItem3Button.TabIndex = 18
-        Me.removeItem3Button.Text = "Remove"
-        Me.removeItem3Button.UseVisualStyleBackColor = True
+        Me.removeItem2Button.Location = New System.Drawing.Point(639, 184)
+        Me.removeItem2Button.Margin = New System.Windows.Forms.Padding(4)
+        Me.removeItem2Button.Name = "removeItem2Button"
+        Me.removeItem2Button.Size = New System.Drawing.Size(100, 28)
+        Me.removeItem2Button.TabIndex = 18
+        Me.removeItem2Button.Text = "Remove"
+        Me.removeItem2Button.UseVisualStyleBackColor = True
         '
         'item1WeightBox
         '
@@ -612,56 +662,6 @@ Partial Class vbMailOrder
         Me.Label9.TabIndex = 7
         Me.Label9.Text = "Programmed by: John-William Trenholm"
         '
-        'item4PriceBox
-        '
-        Me.item4PriceBox.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.item4PriceBox.Location = New System.Drawing.Point(391, 262)
-        Me.item4PriceBox.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.item4PriceBox.Name = "item4PriceBox"
-        Me.item4PriceBox.ReadOnly = True
-        Me.item4PriceBox.Size = New System.Drawing.Size(64, 22)
-        Me.item4PriceBox.TabIndex = 26
-        '
-        'item4quantBox
-        '
-        Me.item4quantBox.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.item4quantBox.Location = New System.Drawing.Point(9, 261)
-        Me.item4quantBox.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.item4quantBox.Name = "item4quantBox"
-        Me.item4quantBox.ReadOnly = True
-        Me.item4quantBox.Size = New System.Drawing.Size(56, 22)
-        Me.item4quantBox.TabIndex = 24
-        '
-        'item4WeightBox
-        '
-        Me.item4WeightBox.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.item4WeightBox.Location = New System.Drawing.Point(497, 265)
-        Me.item4WeightBox.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.item4WeightBox.Name = "item4WeightBox"
-        Me.item4WeightBox.ReadOnly = True
-        Me.item4WeightBox.Size = New System.Drawing.Size(68, 22)
-        Me.item4WeightBox.TabIndex = 27
-        '
-        'removeItem5Button
-        '
-        Me.removeItem5Button.Location = New System.Drawing.Point(639, 259)
-        Me.removeItem5Button.Margin = New System.Windows.Forms.Padding(4)
-        Me.removeItem5Button.Name = "removeItem5Button"
-        Me.removeItem5Button.Size = New System.Drawing.Size(100, 28)
-        Me.removeItem5Button.TabIndex = 28
-        Me.removeItem5Button.Text = "Remove"
-        Me.removeItem5Button.UseVisualStyleBackColor = True
-        '
-        'item4TextBox
-        '
-        Me.item4TextBox.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.item4TextBox.Location = New System.Drawing.Point(100, 261)
-        Me.item4TextBox.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.item4TextBox.Name = "item4TextBox"
-        Me.item4TextBox.ReadOnly = True
-        Me.item4TextBox.Size = New System.Drawing.Size(252, 22)
-        Me.item4TextBox.TabIndex = 25
-        '
         'vbMailOrder
         '
         Me.AcceptButton = Me.summaryButton
@@ -720,9 +720,9 @@ Partial Class vbMailOrder
     Friend WithEvents Label10 As System.Windows.Forms.Label
     Friend WithEvents salesTaxBox As System.Windows.Forms.Label
     Friend WithEvents Label8 As System.Windows.Forms.Label
-    Friend WithEvents removeItem4Button As System.Windows.Forms.Button
-    Friend WithEvents removeItem2Button As System.Windows.Forms.Button
     Friend WithEvents removeItem3Button As System.Windows.Forms.Button
+    Friend WithEvents removeItem1Button As System.Windows.Forms.Button
+    Friend WithEvents removeItem2Button As System.Windows.Forms.Button
     Friend WithEvents addItem1Button As System.Windows.Forms.Button
     Friend WithEvents item3quantBox As System.Windows.Forms.TextBox
     Friend WithEvents item2quantBox As System.Windows.Forms.TextBox
@@ -734,7 +734,7 @@ Partial Class vbMailOrder
     Friend WithEvents itemWeightBox As System.Windows.Forms.TextBox
     Friend WithEvents item3PriceBox As System.Windows.Forms.TextBox
     Friend WithEvents item2PriceBox As System.Windows.Forms.TextBox
-    Friend WithEvents ite1PriceBox As System.Windows.Forms.TextBox
+    Friend WithEvents item1PriceBox As System.Windows.Forms.TextBox
     Friend WithEvents itemPriceBox As System.Windows.Forms.TextBox
     Friend WithEvents Label9 As System.Windows.Forms.Label
     Friend WithEvents totalAmountBox As System.Windows.Forms.TextBox
@@ -744,7 +744,7 @@ Partial Class vbMailOrder
     Friend WithEvents item4PriceBox As System.Windows.Forms.TextBox
     Friend WithEvents item4quantBox As System.Windows.Forms.TextBox
     Friend WithEvents item4WeightBox As System.Windows.Forms.TextBox
-    Friend WithEvents removeItem5Button As System.Windows.Forms.Button
+    Friend WithEvents removeItem4Button As System.Windows.Forms.Button
     Friend WithEvents item4TextBox As System.Windows.Forms.TextBox
 
 End Class
