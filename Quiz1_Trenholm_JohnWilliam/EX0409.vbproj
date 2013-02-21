@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>9.0.21022</ProductVersion>
+    <ProductVersion>9.0.30729</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{D7964D3D-47E1-4616-B8F2-3859820DCE34}</ProjectGuid>
     <OutputType>WinExe</OutputType>
@@ -53,11 +53,12 @@
     <Import Include="System.Windows.Forms" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CateringForm.vb">
-      <SubType>Form</SubType>
+    <Compile Include="..\Quiz1_Trenholm_JohnWilliam222222.Designer.vb">
+      <Link>Quiz1_Trenholm_JohnWilliam222222.Designer.vb</Link>
+      <DependentUpon>Quiz1_Trenholm_JohnWilliam222222.vb</DependentUpon>
     </Compile>
-    <Compile Include="CateringForm.Designer.vb">
-      <DependentUpon>CateringForm.vb</DependentUpon>
+    <Compile Include="..\Quiz1_Trenholm_JohnWilliam222222.vb">
+      <Link>Quiz1_Trenholm_JohnWilliam222222.vb</Link>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -78,8 +79,9 @@
     <Compile Include="My Project\MyEvents.vb" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="CateringForm.resx">
-      <DependentUpon>CateringForm.vb</DependentUpon>
+    <EmbeddedResource Include="..\Quiz1_Trenholm_JohnWilliam222222.resx">
+      <Link>Quiz1_Trenholm_JohnWilliam222222.resx</Link>
+      <DependentUpon>Quiz1_Trenholm_JohnWilliam222222.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
