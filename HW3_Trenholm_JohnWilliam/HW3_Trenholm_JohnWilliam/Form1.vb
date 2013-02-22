@@ -3,7 +3,7 @@
 ' Date: 2-20-2013
 ' Description: VB Mail Order.
 
-'I thought this assingment was rather challenging. It made me feel dumb.
+'Select * from orders....
 
 Public Class vbMailOrder
     'Global variables because I didn't want to recreate the try/catch block in both the add buttton & summary button.
@@ -52,13 +52,13 @@ Public Class vbMailOrder
 
 
 
-        totalPrice = price1Total + price2Total + price3Total + price4Total
+        totalPrice = price1 + price2 + price3 + price4
         totalShipping = (price1Weight + price2Weight + price3Weight + price4Weight) * 0.25
         totalTax = price1Tax + price2Tax + price3Tax + price4Tax
 
         'Figure out state to do tax & stuff.
         If stateTextBox.Text.ToUpper = "CA" Then
-            totalTax = (price1 + price2 + price3 + price4) * 0.08
+            totalTax = totalPrice * 0.08
         Else
             totalTax = 0
         End If
@@ -75,6 +75,7 @@ Public Class vbMailOrder
 
     Private Sub addItem1Button_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles addItem1Button.Click
 
+        'get input & tell the user they should type stuff in... or else....
         Try
             item1Qauntity = Integer.Parse(itemquantBox.Text)
             Try
@@ -97,25 +98,30 @@ Public Class vbMailOrder
                 MessageBox.Show("Error in Item Desc Box", "input error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
             End Try
 
+            'Move the users order to the actual order field.
             item1quantBox.Text = itemquantBox.Text
             item1TextBox.Text = itemTextBox.Text
             item1WeightBox.Text = itemWeightBox.Text
             item1PriceBox.Text = itemPriceBox.Text
+            'set a state.
+
+
+
 
             item2quantBox.Text = item1quantBox.Text
             item2TextBox.Text = item1TextBox.Text
             item2WeightBox.Text = item1WeightBox.Text
             item2PriceBox.Text = item1PriceBox.Text
 
-            item3quantBox.Text = item2quantBox.Text
-            item3TextBox.Text = item2TextBox.Text
-            item3WeightBox.Text = item2WeightBox.Text
-            item3PriceBox.Text = item2PriceBox.Text
+            'item3quantBox.Text = item2quantBox.Text
+            'item3TextBox.Text = item2TextBox.Text
+            'item3WeightBox.Text = item2WeightBox.Text
+            'item3PriceBox.Text = item2PriceBox.Text
 
-            item4quantBox.Text = item3quantBox.Text
-            item4TextBox.Text = item3TextBox.Text
-            item4WeightBox.Text = item3WeightBox.Text
-            item4PriceBox.Text = item3PriceBox.Text
+            'item4quantBox.Text = item3quantBox.Text
+            'item4TextBox.Text = item3TextBox.Text
+            'item4WeightBox.Text = item3WeightBox.Text
+            'item4PriceBox.Text = item3PriceBox.Text
 
         Catch ex As Exception
             MessageBox.Show("Error in Item Quantity Box", "input error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
