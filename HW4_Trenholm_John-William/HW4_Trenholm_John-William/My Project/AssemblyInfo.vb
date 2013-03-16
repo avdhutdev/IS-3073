@@ -8,8 +8,8 @@ Imports System.Runtime.InteropServices
 
 ' Review the values of the assembly attributes
 
-<Assembly: AssemblyTitle("HW4_Trenholm_John-William")> 
-<Assembly: AssemblyDescription("")> 
+<Assembly: AssemblyTitle("Valley Boulevard Auto Center")> 
+<Assembly: AssemblyDescription("Meeting all your vehicle’s needs")> 
 <Assembly: AssemblyCompany("")> 
 <Assembly: AssemblyProduct("HW4_Trenholm_John-William")> 
 <Assembly: AssemblyCopyright("Copyright ©  2013")> 
