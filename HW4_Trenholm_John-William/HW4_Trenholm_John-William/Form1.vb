@@ -1,8 +1,12 @@
-﻿Public Class Form1
-
+﻿'Project: Homework 4
+'Programmer: John-William Trenholm
+'Date: 3-16-2012
+'Description: Calculations, menus, functions oh my.
+Public Class vbinfo
     Private Sub calcButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles calcButton.Click
+        'Figure out what to bill for.
         Dim steroPrice, leatherPrice, navigationPrice, finishCost, carsalesPrice, totalAmount, taxAmount, accessoriesPrice, salesPrice, tradeInPrice As Decimal
-        Const TAX_RATE_Decimal As Decimal = 0.08D
+
         If (stereoCheckbox.Checked) Then
             steroPrice = 425.76
         End If
@@ -12,7 +16,7 @@
         If (navigationCheckbox.Checked) Then
             navigationPrice = 1741.23
         End If
-
+        'figure out what thing is checked to set the correct amount.
         If (standardRadio.Checked) Then
             finishCost = 0
         End If
@@ -35,7 +39,7 @@
                 salesPrice = accessoriesPrice + finishCost + carsalesPrice
                 subTotalBox.Text = salesPrice
 
-                taxAmount = salesPrice * TAX_RATE_Decimal
+                taxAmount = calcTaxRax(salesPrice)
                 salesTaxBox.Text = taxAmount
 
                 totalAmount = taxAmount + salesPrice
@@ -57,6 +61,12 @@
 
     End Sub
 
+    Private Function calcTaxRax(ByVal salesPrice As Decimal)
+        Const TAX_RATE_Decimal As Decimal = 0.08D
+
+        Return salesPrice * TAX_RATE_Decimal
+    End Function
+
     Private Sub clearButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles clearButton.Click
         stereoCheckbox.Checked = False
         leatherCheckbox.Checked = False
@@ -75,5 +85,31 @@
 
     Private Sub exitButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles exitButton.Click
         Me.Close()
+    End Sub
+
+    Private Sub ExitToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ExitToolStripMenuItem.Click
+        Me.Close()
+    End Sub
+
+    Private Sub CLearToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles CLearToolStripMenuItem.Click
+        Call clearButton_Click(sender, e)
+    End Sub
+
+    Private Sub CalculateToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles CalculateToolStripMenuItem.Click
+        Call calcButton_Click(sender, e)
+    End Sub
+
+    Private Sub ColorToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ColorToolStripMenuItem.Click
+        ColorDialog1.ShowDialog()
+        amountDueBox.ForeColor = ColorDialog1.Color
+    End Sub
+
+    Private Sub FontToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles FontToolStripMenuItem.Click
+        FontDialog1.ShowDialog()
+        amountDueBox.Font = FontDialog1.Font
+    End Sub
+
+    Private Sub AboutToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles AboutToolStripMenuItem.Click
+        AboutBox1.ShowDialog()
     End Sub
 End Class
