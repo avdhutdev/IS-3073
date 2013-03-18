@@ -30,6 +30,7 @@ Public Class vbinfo
         ' Calculate price and add to order total.
         Try
             carsalesPrice = Decimal.Parse(carSalesPriceTextBox.Text)
+            'assignes the value ot tradein.
             Try
                 tradeInPrice = Decimal.Parse(tradeInValueBox.Text)
 
@@ -60,13 +61,13 @@ Public Class vbinfo
         End Try
 
     End Sub
-
+    'function to calc tax rate
     Private Function calcTaxRax(ByVal salesPrice As Decimal)
         Const TAX_RATE_Decimal As Decimal = 0.08D
 
         Return salesPrice * TAX_RATE_Decimal
     End Function
-
+    'clears the values.
     Private Sub clearButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles clearButton.Click
         stereoCheckbox.Checked = False
         leatherCheckbox.Checked = False
@@ -82,33 +83,33 @@ Public Class vbinfo
         pearlRadio.Checked = False
         customizedRadio.Checked = False
     End Sub
-
+    'closes the window
     Private Sub exitButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles exitButton.Click
         Me.Close()
     End Sub
-
+    'closes teh window from the menu
     Private Sub ExitToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ExitToolStripMenuItem.Click
         Me.Close()
     End Sub
-
+    'clears the stuff.
     Private Sub CLearToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles CLearToolStripMenuItem.Click
         Call clearButton_Click(sender, e)
     End Sub
-
+    'calcs the stuff from the menu window
     Private Sub CalculateToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles CalculateToolStripMenuItem.Click
         Call calcButton_Click(sender, e)
     End Sub
-
+    'set the color
     Private Sub ColorToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ColorToolStripMenuItem.Click
         ColorDialog1.ShowDialog()
         amountDueBox.ForeColor = ColorDialog1.Color
     End Sub
-
+    'sets teh font
     Private Sub FontToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles FontToolStripMenuItem.Click
         FontDialog1.ShowDialog()
         amountDueBox.Font = FontDialog1.Font
     End Sub
-
+    'brings up the about window.
     Private Sub AboutToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles AboutToolStripMenuItem.Click
         AboutBox1.ShowDialog()
     End Sub
