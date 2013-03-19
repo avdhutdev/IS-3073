@@ -73,4 +73,8 @@ Public Class CateringForm
             Call ClearButton_Click(sender, e)
         End If
     End Sub
+
+    Private Sub CateringForm_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class

@@ -1,4 +1,4 @@
-﻿Public Class Form1
+﻿Public Class menuforms
 
 
     Private Sub ExitToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ExitToolStripMenuItem.Click
@@ -44,5 +44,17 @@
     Private Sub ClearToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ClearToolStripMenuItem.Click, ClearToolStripMenuItem2.Click, ClearToolStripMenuItem2.Click
         TotalTextBox.Clear()
         SubTotalTextBox.Clear()
+    End Sub
+
+    Private Sub SubTotalTextBox_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles SubTotalTextBox.TextChanged
+
+    End Sub
+
+    Private Sub ShowCalcFormToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ShowCalcFormToolStripMenuItem.Click
+        ' BillingForm.ShowDialog()
+    End Sub
+
+    Private Sub AboutToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles AboutToolStripMenuItem.Click
+        AboutBox1.Show()
     End Sub
 End Class

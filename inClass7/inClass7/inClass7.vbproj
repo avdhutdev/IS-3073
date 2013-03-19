@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.30729</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{0AF6C104-3C87-44ED-B0D5-9287E35D6E7C}</ProjectGuid>
+    <ProjectGuid>{9B9F7DB4-CECB-4E0F-9233-54E1A8428EC1}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>Ch05inclass.My.MyApplication</StartupObject>
-    <RootNamespace>Ch05inclass</RootNamespace>
-    <AssemblyName>Ch05inclass</AssemblyName>
+    <StartupObject>inClass7.My.MyApplication</StartupObject>
+    <RootNamespace>inClass7</RootNamespace>
+    <AssemblyName>inClass7</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
@@ -24,7 +24,7 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>Ch05inclass.xml</DocumentationFile>
+    <DocumentationFile>inClass7.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -33,7 +33,7 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>Ch05inclass.xml</DocumentationFile>
+    <DocumentationFile>inClass7.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <ItemGroup>
@@ -66,30 +66,11 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AboutBox1.Designer.vb">
-      <DependentUpon>AboutBox1.vb</DependentUpon>
-    </Compile>
-    <Compile Include="AboutBox1.vb">
+    <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ApplicationEvents.vb" />
-    <Compile Include="brokenForm.designer.vb">
-      <DependentUpon>brokenForm.vb</DependentUpon>
-    </Compile>
-    <Compile Include="brokenForm.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="mainForm.designer.vb">
-      <DependentUpon>mainForm.vb</DependentUpon>
-    </Compile>
-    <Compile Include="mainForm.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="menuforms.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="menuforms.Designer.vb">
-      <DependentUpon>menuforms.vb</DependentUpon>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -107,34 +88,13 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="SplashScreen1.Designer.vb">
-      <DependentUpon>SplashScreen1.vb</DependentUpon>
-    </Compile>
-    <Compile Include="SplashScreen1.vb">
-      <SubType>Form</SubType>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="AboutBox1.resx">
-      <DependentUpon>AboutBox1.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="brokenForm.resx">
-      <DependentUpon>brokenForm.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="mainForm.resx">
-      <DependentUpon>mainForm.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="menuforms.resx">
-      <DependentUpon>menuforms.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="SplashScreen1.resx">
-      <DependentUpon>SplashScreen1.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

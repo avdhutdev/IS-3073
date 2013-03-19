@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Form1
+Partial Class menuforms
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -29,6 +29,7 @@ Partial Class Form1
         Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator
         Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.ToolStripTextBox1 = New System.Windows.Forms.ToolStripTextBox
+        Me.ShowCalcFormToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.DesignToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.FontToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
@@ -45,13 +46,13 @@ Partial Class Form1
         Me.ColorToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
         Me.FontToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem
         Me.TotalContextMenuToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
+        Me.ClearToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem
         Me.SubTotalTextBox = New System.Windows.Forms.TextBox
         Me.subTotalcContext = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.FontToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
         Me.ColorToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem
         Me.SubTotalContextToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.ClearToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
-        Me.ClearToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem
         Me.MenuStrip1.SuspendLayout()
         Me.totalContextMenu.SuspendLayout()
         Me.subTotalcContext.SuspendLayout()
@@ -68,7 +69,7 @@ Partial Class Form1
         '
         'FileToolStripMenuItem
         '
-        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.PrintToolStripMenuItem, Me.ToolStripSeparator1, Me.ExitToolStripMenuItem, Me.ToolStripTextBox1})
+        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.PrintToolStripMenuItem, Me.ToolStripSeparator1, Me.ExitToolStripMenuItem, Me.ToolStripTextBox1, Me.ShowCalcFormToolStripMenuItem})
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
         Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
         Me.FileToolStripMenuItem.Text = "&File"
@@ -96,6 +97,12 @@ Partial Class Form1
         Me.ToolStripTextBox1.Name = "ToolStripTextBox1"
         Me.ToolStripTextBox1.Size = New System.Drawing.Size(100, 23)
         '
+        'ShowCalcFormToolStripMenuItem
+        '
+        Me.ShowCalcFormToolStripMenuItem.Name = "ShowCalcFormToolStripMenuItem"
+        Me.ShowCalcFormToolStripMenuItem.Size = New System.Drawing.Size(160, 22)
+        Me.ShowCalcFormToolStripMenuItem.Text = "Show-CalcForm"
+        '
         'EditToolStripMenuItem
         '
         Me.EditToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.DesignToolStripMenuItem})
@@ -107,7 +114,7 @@ Partial Class Form1
         '
         Me.DesignToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FontToolStripMenuItem, Me.ColorToolStripMenuItem, Me.ClearToolStripMenuItem})
         Me.DesignToolStripMenuItem.Name = "DesignToolStripMenuItem"
-        Me.DesignToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.DesignToolStripMenuItem.Size = New System.Drawing.Size(110, 22)
         Me.DesignToolStripMenuItem.Text = "Design"
         '
         'FontToolStripMenuItem
@@ -115,19 +122,19 @@ Partial Class Form1
         Me.FontToolStripMenuItem.Checked = True
         Me.FontToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked
         Me.FontToolStripMenuItem.Name = "FontToolStripMenuItem"
-        Me.FontToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.FontToolStripMenuItem.Size = New System.Drawing.Size(103, 22)
         Me.FontToolStripMenuItem.Text = "Font"
         '
         'ColorToolStripMenuItem
         '
         Me.ColorToolStripMenuItem.Name = "ColorToolStripMenuItem"
-        Me.ColorToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ColorToolStripMenuItem.Size = New System.Drawing.Size(103, 22)
         Me.ColorToolStripMenuItem.Text = "Color"
         '
         'ClearToolStripMenuItem
         '
         Me.ClearToolStripMenuItem.Name = "ClearToolStripMenuItem"
-        Me.ClearToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ClearToolStripMenuItem.Size = New System.Drawing.Size(103, 22)
         Me.ClearToolStripMenuItem.Text = "&Clear"
         '
         'HelpToolStripMenuItem
@@ -140,7 +147,7 @@ Partial Class Form1
         'AboutToolStripMenuItem
         '
         Me.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem"
-        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(107, 22)
+        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.AboutToolStripMenuItem.Text = "About"
         '
         'YourmomToolStripMenuItem
@@ -168,7 +175,7 @@ Partial Class Form1
         '
         Me.totalContextMenu.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ColorToolStripMenuItem1, Me.FontToolStripMenuItem2, Me.TotalContextMenuToolStripMenuItem, Me.ClearToolStripMenuItem2})
         Me.totalContextMenu.Name = "totalContextMenu"
-        Me.totalContextMenu.Size = New System.Drawing.Size(174, 114)
+        Me.totalContextMenu.Size = New System.Drawing.Size(174, 92)
         '
         'ColorToolStripMenuItem1
         '
@@ -187,6 +194,12 @@ Partial Class Form1
         Me.TotalContextMenuToolStripMenuItem.Name = "TotalContextMenuToolStripMenuItem"
         Me.TotalContextMenuToolStripMenuItem.Size = New System.Drawing.Size(173, 22)
         Me.TotalContextMenuToolStripMenuItem.Text = "TotalContextMenu"
+        '
+        'ClearToolStripMenuItem2
+        '
+        Me.ClearToolStripMenuItem2.Name = "ClearToolStripMenuItem2"
+        Me.ClearToolStripMenuItem2.Size = New System.Drawing.Size(173, 22)
+        Me.ClearToolStripMenuItem2.Text = "Clear"
         '
         'SubTotalTextBox
         '
@@ -226,13 +239,7 @@ Partial Class Form1
         Me.ClearToolStripMenuItem1.Size = New System.Drawing.Size(162, 22)
         Me.ClearToolStripMenuItem1.Text = "Clear"
         '
-        'ClearToolStripMenuItem2
-        '
-        Me.ClearToolStripMenuItem2.Name = "ClearToolStripMenuItem2"
-        Me.ClearToolStripMenuItem2.Size = New System.Drawing.Size(173, 22)
-        Me.ClearToolStripMenuItem2.Text = "Clear"
-        '
-        'Form1
+        'menuforms
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -241,7 +248,7 @@ Partial Class Form1
         Me.Controls.Add(Me.TotalTextBox)
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1
-        Me.Name = "Form1"
+        Me.Name = "menuforms"
         Me.Text = "Form1"
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
@@ -280,5 +287,6 @@ Partial Class Form1
     Friend WithEvents ClearToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ClearToolStripMenuItem2 As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ClearToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ShowCalcFormToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 
 End Class

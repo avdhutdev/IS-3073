@@ -8,17 +8,17 @@ Imports System.Runtime.InteropServices
 
 ' Review the values of the assembly attributes
 
-<Assembly: AssemblyTitle("Ch05inclass")> 
-<Assembly: AssemblyDescription("exercise we did in class")> 
-<Assembly: AssemblyCompany("asdfasf")> 
-<Assembly: AssemblyProduct("Ch05inclass")> 
+<Assembly: AssemblyTitle("CH6_InClass")> 
+<Assembly: AssemblyDescription("")> 
+<Assembly: AssemblyCompany("")> 
+<Assembly: AssemblyProduct("CH6_InClass")> 
 <Assembly: AssemblyCopyright("Copyright ©  2013")> 
-<Assembly: AssemblyTrademark("asfasdf")> 
+<Assembly: AssemblyTrademark("")> 
 
 <Assembly: ComVisible(False)>
 
 'The following GUID is for the ID of the typelib if this project is exposed to COM
-<Assembly: Guid("31c4f34e-5211-47b4-899c-fe8f692abfe8")> 
+<Assembly: Guid("e367290e-5886-4d86-bdbc-f862869bebc8")> 
 
 ' Version information for an assembly consists of the following four values:
 '
@@ -31,5 +31,5 @@ Imports System.Runtime.InteropServices
 ' by using the '*' as shown below:
 ' <Assembly: AssemblyVersion("1.0.*")> 
 
-<Assembly: AssemblyVersion("1.2.3.4")> 
-<Assembly: AssemblyFileVersion("1.2.3.4")> 
+<Assembly: AssemblyVersion("1.0.0.0")> 
+<Assembly: AssemblyFileVersion("1.0.0.0")> 
