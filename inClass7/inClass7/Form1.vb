@@ -33,4 +33,18 @@
     Private Sub removePizza_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles removePizza.Click
         ListBox1.Items.Remove(removeStringTextBox.Text)
     End Sub
+
+    Private Sub searchButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles searchButton.Click
+        Dim foundItem As Boolean = True
+        Dim indexInt As Integer = 0
+        Do While foundItem And indexInt < ListBox1.Items.Count()
+            If searchTextBox.Text = ListBox1.Items(indexInt).ToString() Then
+                MessageBox.Show("Found item", "ListBox1 Find", MessageBoxButtons.OK, MessageBoxIcon.Asterisk)
+                foundItem = False
+            Else
+                MessageBox.Show("Found NOT item", "ListBox1 Find", MessageBoxButtons.OK, MessageBoxIcon.Asterisk)
+                indexInt += 1
+            End If
+        Loop
+    End Sub
 End Class

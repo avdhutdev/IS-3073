@@ -36,6 +36,8 @@ Partial Class Form1
         Me.removeTextBox = New System.Windows.Forms.TextBox
         Me.removePizza = New System.Windows.Forms.Button
         Me.removeStringTextBox = New System.Windows.Forms.TextBox
+        Me.searchButton = New System.Windows.Forms.Button
+        Me.searchTextBox = New System.Windows.Forms.TextBox
         Me.SuspendLayout()
         '
         'ListBox1
@@ -158,11 +160,29 @@ Partial Class Form1
         Me.removeStringTextBox.Size = New System.Drawing.Size(100, 20)
         Me.removeStringTextBox.TabIndex = 13
         '
+        'searchButton
+        '
+        Me.searchButton.Location = New System.Drawing.Point(23, 452)
+        Me.searchButton.Name = "searchButton"
+        Me.searchButton.Size = New System.Drawing.Size(75, 23)
+        Me.searchButton.TabIndex = 14
+        Me.searchButton.Text = "Search"
+        Me.searchButton.UseVisualStyleBackColor = True
+        '
+        'searchTextBox
+        '
+        Me.searchTextBox.Location = New System.Drawing.Point(133, 452)
+        Me.searchTextBox.Name = "searchTextBox"
+        Me.searchTextBox.Size = New System.Drawing.Size(100, 20)
+        Me.searchTextBox.TabIndex = 15
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(282, 451)
+        Me.ClientSize = New System.Drawing.Size(282, 552)
+        Me.Controls.Add(Me.searchTextBox)
+        Me.Controls.Add(Me.searchButton)
         Me.Controls.Add(Me.removeStringTextBox)
         Me.Controls.Add(Me.removePizza)
         Me.Controls.Add(Me.removeTextBox)
@@ -197,5 +217,7 @@ Partial Class Form1
     Friend WithEvents removeTextBox As System.Windows.Forms.TextBox
     Friend WithEvents removePizza As System.Windows.Forms.Button
     Friend WithEvents removeStringTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents searchButton As System.Windows.Forms.Button
+    Friend WithEvents searchTextBox As System.Windows.Forms.TextBox
 
 End Class
