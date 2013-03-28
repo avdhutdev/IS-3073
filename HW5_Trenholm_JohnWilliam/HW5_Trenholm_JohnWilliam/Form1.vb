@@ -15,4 +15,11 @@
         AboutBox1.Show()
 
     End Sub
+
+    Private Sub AddYachtTypeToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles AddYachtTypeToolStripMenuItem.Click
+        If yachtAddBox.Text <> "" Then
+            yachtAddBox.Items.Add(yachtAddBox.Text)
+            yachtAddBox.Text = ""
+        End If
+    End Sub
 End Class
