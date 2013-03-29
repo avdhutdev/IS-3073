@@ -58,8 +58,8 @@ Partial Class Form1
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.EditToolStripMenuItem, Me.HelpToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(4, 2, 0, 2)
-        Me.MenuStrip1.Size = New System.Drawing.Size(546, 24)
+        Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(5, 2, 0, 2)
+        Me.MenuStrip1.Size = New System.Drawing.Size(728, 28)
         Me.MenuStrip1.TabIndex = 0
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -67,87 +67,87 @@ Partial Class Form1
         '
         Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.PrintSummaryToolStripMenuItem, Me.PrintYachtTypeToolStripMenuItem, Me.ToolStripSeparator1, Me.ExitToolStripMenuItem})
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
-        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(44, 24)
         Me.FileToolStripMenuItem.Text = "&File"
         '
         'PrintSummaryToolStripMenuItem
         '
         Me.PrintSummaryToolStripMenuItem.Name = "PrintSummaryToolStripMenuItem"
-        Me.PrintSummaryToolStripMenuItem.Size = New System.Drawing.Size(161, 22)
+        Me.PrintSummaryToolStripMenuItem.Size = New System.Drawing.Size(184, 24)
         Me.PrintSummaryToolStripMenuItem.Text = "Print &Summary"
         '
         'PrintYachtTypeToolStripMenuItem
         '
         Me.PrintYachtTypeToolStripMenuItem.Name = "PrintYachtTypeToolStripMenuItem"
-        Me.PrintYachtTypeToolStripMenuItem.Size = New System.Drawing.Size(161, 22)
+        Me.PrintYachtTypeToolStripMenuItem.Size = New System.Drawing.Size(184, 24)
         Me.PrintYachtTypeToolStripMenuItem.Text = "Print &Yacht Type"
         '
         'ToolStripSeparator1
         '
         Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
-        Me.ToolStripSeparator1.Size = New System.Drawing.Size(158, 6)
+        Me.ToolStripSeparator1.Size = New System.Drawing.Size(181, 6)
         '
         'ExitToolStripMenuItem
         '
         Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(161, 22)
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(184, 24)
         Me.ExitToolStripMenuItem.Text = "E&xit"
         '
         'EditToolStripMenuItem
         '
         Me.EditToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ClearForNextToolStripMenuItem, Me.ToolStripSeparator2, Me.AddYachtTypeToolStripMenuItem, Me.RemoveYachtTypeToolStripMenuItem, Me.DisplayYachtTypeToolStripMenuItem})
         Me.EditToolStripMenuItem.Name = "EditToolStripMenuItem"
-        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(39, 20)
+        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(47, 24)
         Me.EditToolStripMenuItem.Text = "&Edit"
         '
         'ClearForNextToolStripMenuItem
         '
         Me.ClearForNextToolStripMenuItem.Name = "ClearForNextToolStripMenuItem"
-        Me.ClearForNextToolStripMenuItem.Size = New System.Drawing.Size(190, 22)
+        Me.ClearForNextToolStripMenuItem.Size = New System.Drawing.Size(224, 24)
         Me.ClearForNextToolStripMenuItem.Text = "&Clear For Next Charter"
         '
         'ToolStripSeparator2
         '
         Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
-        Me.ToolStripSeparator2.Size = New System.Drawing.Size(187, 6)
+        Me.ToolStripSeparator2.Size = New System.Drawing.Size(221, 6)
         '
         'AddYachtTypeToolStripMenuItem
         '
         Me.AddYachtTypeToolStripMenuItem.Name = "AddYachtTypeToolStripMenuItem"
-        Me.AddYachtTypeToolStripMenuItem.Size = New System.Drawing.Size(190, 22)
+        Me.AddYachtTypeToolStripMenuItem.Size = New System.Drawing.Size(224, 24)
         Me.AddYachtTypeToolStripMenuItem.Text = "&Add Yacht Type"
         '
         'RemoveYachtTypeToolStripMenuItem
         '
         Me.RemoveYachtTypeToolStripMenuItem.Name = "RemoveYachtTypeToolStripMenuItem"
-        Me.RemoveYachtTypeToolStripMenuItem.Size = New System.Drawing.Size(190, 22)
+        Me.RemoveYachtTypeToolStripMenuItem.Size = New System.Drawing.Size(268, 24)
         Me.RemoveYachtTypeToolStripMenuItem.Text = "&Remove Yacht Type"
         '
         'DisplayYachtTypeToolStripMenuItem
         '
         Me.DisplayYachtTypeToolStripMenuItem.Name = "DisplayYachtTypeToolStripMenuItem"
-        Me.DisplayYachtTypeToolStripMenuItem.Size = New System.Drawing.Size(190, 22)
-        Me.DisplayYachtTypeToolStripMenuItem.Text = "&Display Yacht Type"
+        Me.DisplayYachtTypeToolStripMenuItem.Size = New System.Drawing.Size(268, 24)
+        Me.DisplayYachtTypeToolStripMenuItem.Text = "&Display count of Yacht Types"
         '
         'HelpToolStripMenuItem
         '
         Me.HelpToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem2})
         Me.HelpToolStripMenuItem.Name = "HelpToolStripMenuItem"
-        Me.HelpToolStripMenuItem.Size = New System.Drawing.Size(44, 20)
+        Me.HelpToolStripMenuItem.Size = New System.Drawing.Size(53, 24)
         Me.HelpToolStripMenuItem.Text = "&Help"
         '
         'ToolStripMenuItem2
         '
         Me.ToolStripMenuItem2.Name = "ToolStripMenuItem2"
-        Me.ToolStripMenuItem2.Size = New System.Drawing.Size(107, 22)
+        Me.ToolStripMenuItem2.Size = New System.Drawing.Size(119, 24)
         Me.ToolStripMenuItem2.Text = "&About"
         '
         'okButton
         '
-        Me.okButton.Location = New System.Drawing.Point(332, 245)
-        Me.okButton.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.okButton.Location = New System.Drawing.Point(443, 302)
+        Me.okButton.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.okButton.Name = "okButton"
-        Me.okButton.Size = New System.Drawing.Size(56, 19)
+        Me.okButton.Size = New System.Drawing.Size(75, 23)
         Me.okButton.TabIndex = 9
         Me.okButton.Text = "&OK"
         Me.okButton.UseVisualStyleBackColor = True
@@ -155,10 +155,10 @@ Partial Class Form1
         'clearButton
         '
         Me.clearButton.DialogResult = System.Windows.Forms.DialogResult.Cancel
-        Me.clearButton.Location = New System.Drawing.Point(438, 245)
-        Me.clearButton.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.clearButton.Location = New System.Drawing.Point(584, 302)
+        Me.clearButton.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.clearButton.Name = "clearButton"
-        Me.clearButton.Size = New System.Drawing.Size(56, 19)
+        Me.clearButton.Size = New System.Drawing.Size(75, 23)
         Me.clearButton.TabIndex = 0
         Me.clearButton.Text = "&Clear"
         Me.clearButton.UseVisualStyleBackColor = True
@@ -169,11 +169,11 @@ Partial Class Form1
         Me.GroupBox1.Controls.Add(Me.ComboBox2)
         Me.GroupBox1.Controls.Add(Me.Label4)
         Me.GroupBox1.Controls.Add(Me.yachtAddBox)
-        Me.GroupBox1.Location = New System.Drawing.Point(316, 57)
-        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox1.Location = New System.Drawing.Point(421, 70)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.GroupBox1.Size = New System.Drawing.Size(198, 157)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.GroupBox1.Size = New System.Drawing.Size(264, 193)
         Me.GroupBox1.TabIndex = 6
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Type && Length"
@@ -181,10 +181,9 @@ Partial Class Form1
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(14, 89)
-        Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label5.Location = New System.Drawing.Point(19, 110)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(71, 13)
+        Me.Label5.Size = New System.Drawing.Size(92, 17)
         Me.Label5.TabIndex = 2
         Me.Label5.Text = "Yacht &Length"
         '
@@ -193,19 +192,18 @@ Partial Class Form1
         Me.ComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ComboBox2.FormattingEnabled = True
         Me.ComboBox2.Items.AddRange(New Object() {"22", "24", "30", "32", "36", "38", "45"})
-        Me.ComboBox2.Location = New System.Drawing.Point(16, 115)
-        Me.ComboBox2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.ComboBox2.Location = New System.Drawing.Point(21, 142)
+        Me.ComboBox2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(158, 21)
+        Me.ComboBox2.Size = New System.Drawing.Size(209, 24)
         Me.ComboBox2.TabIndex = 3
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(14, 20)
-        Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label4.Location = New System.Drawing.Point(19, 25)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(65, 13)
+        Me.Label4.Size = New System.Drawing.Size(84, 17)
         Me.Label4.TabIndex = 0
         Me.Label4.Text = "Yacht &Type:"
         '
@@ -213,75 +211,72 @@ Partial Class Form1
         '
         Me.yachtAddBox.FormattingEnabled = True
         Me.yachtAddBox.Items.AddRange(New Object() {"C & C", "Catalina", "Coronado", "Excalibur", "Hans Christian", "Hobie", "Ranger", "Wavelength"})
-        Me.yachtAddBox.Location = New System.Drawing.Point(16, 46)
-        Me.yachtAddBox.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.yachtAddBox.Location = New System.Drawing.Point(21, 57)
+        Me.yachtAddBox.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.yachtAddBox.Name = "yachtAddBox"
-        Me.yachtAddBox.Size = New System.Drawing.Size(162, 21)
+        Me.yachtAddBox.Size = New System.Drawing.Size(215, 24)
         Me.yachtAddBox.TabIndex = 1
         '
         'responsiblePartyBox
         '
-        Me.responsiblePartyBox.Location = New System.Drawing.Point(147, 57)
-        Me.responsiblePartyBox.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.responsiblePartyBox.Location = New System.Drawing.Point(196, 70)
+        Me.responsiblePartyBox.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.responsiblePartyBox.Name = "responsiblePartyBox"
-        Me.responsiblePartyBox.Size = New System.Drawing.Size(151, 20)
+        Me.responsiblePartyBox.Size = New System.Drawing.Size(200, 22)
         Me.responsiblePartyBox.TabIndex = 2
         '
         'hoursCharteredBox
         '
-        Me.hoursCharteredBox.Location = New System.Drawing.Point(147, 110)
-        Me.hoursCharteredBox.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.hoursCharteredBox.Location = New System.Drawing.Point(196, 135)
+        Me.hoursCharteredBox.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.hoursCharteredBox.Name = "hoursCharteredBox"
-        Me.hoursCharteredBox.Size = New System.Drawing.Size(76, 20)
+        Me.hoursCharteredBox.Size = New System.Drawing.Size(100, 22)
         Me.hoursCharteredBox.TabIndex = 4
         '
         'totalChargesBox
         '
-        Me.totalChargesBox.Location = New System.Drawing.Point(147, 180)
-        Me.totalChargesBox.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.totalChargesBox.Location = New System.Drawing.Point(196, 222)
+        Me.totalChargesBox.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.totalChargesBox.Name = "totalChargesBox"
         Me.totalChargesBox.ReadOnly = True
-        Me.totalChargesBox.Size = New System.Drawing.Size(76, 20)
+        Me.totalChargesBox.Size = New System.Drawing.Size(100, 22)
         Me.totalChargesBox.TabIndex = 8
         Me.totalChargesBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(26, 180)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label1.Location = New System.Drawing.Point(35, 222)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(76, 13)
+        Me.Label1.Size = New System.Drawing.Size(101, 17)
         Me.Label1.TabIndex = 7
         Me.Label1.Text = "Total Charges:"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(26, 110)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label2.Location = New System.Drawing.Point(35, 135)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(87, 13)
+        Me.Label2.Size = New System.Drawing.Size(117, 17)
         Me.Label2.TabIndex = 3
         Me.Label2.Text = "Hou&rs Chartered:"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(26, 57)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label3.Location = New System.Drawing.Point(35, 70)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(95, 13)
+        Me.Label3.Size = New System.Drawing.Size(127, 17)
         Me.Label3.TabIndex = 1
         Me.Label3.Text = "Responsible &Party:"
         '
         'Form1
         '
         Me.AcceptButton = Me.okButton
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.CancelButton = Me.clearButton
-        Me.ClientSize = New System.Drawing.Size(546, 331)
+        Me.ClientSize = New System.Drawing.Size(728, 407)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
@@ -293,7 +288,7 @@ Partial Class Form1
         Me.Controls.Add(Me.okButton)
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Name = "Form1"
         Me.Text = "Yacht Charters"
         Me.MenuStrip1.ResumeLayout(False)
