@@ -7,8 +7,9 @@
 
 Public Class BookSale
     Private TitleString As String
-    Private QuantityInteger As Integer
+    Private QuantityInteger, salesCountInteger As Integer
     Private PriceDecimal, ExtendedPriceDecimal As Decimal
+    Private Shared salesTotalDecimal As Decimal
 
     Property Title() As String
         Get
@@ -57,11 +58,22 @@ Public Class BookSale
         Quantity = QuantityIn
         Price = PriceIn
         CalculateExtendedPrice()
+        addToTotals()
     End Sub
-    Protected Sub CalculateExtendedPrice()
+    Protected Overridable Sub CalculateExtendedPrice()
         ExtendedPriceDecimal = QuantityInteger * PriceDecimal
     End Sub
 
+    Shared ReadOnly Property salesTotal() As Decimal
+        Get
+            Return salesTotalDecimal
+        End Get
+    End Property
+
+    Protected Sub addToTotals()
+        salesTotalDecimal += ExtendedPriceDecimal
+        salesCountInteger += 1
+    End Sub
 
 
 End Class
