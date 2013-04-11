@@ -23,7 +23,7 @@
         <br />
         <br />
         <asp:Button ID="SubmitButton" runat="server" Text="Submit" />
-        <br />
+        <input id="Button1" type="button" value="button" /><br />
     
     </div>
     </form>
