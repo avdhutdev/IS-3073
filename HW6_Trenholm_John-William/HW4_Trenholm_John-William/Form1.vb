@@ -17,7 +17,7 @@ Public Class vbinfo
                 If standardRadio.Checked() Or pearlRadio.Checked() Or customizedRadio.Checked() Then
                     AutoPurchases = New Purchases(stereoCheckbox.Checked, leatherCheckbox.Checked, navigationCheckbox.Checked, _
                                                   pearlRadio.Checked, customizedRadio.Checked, CarSalesPriceDeciaml, TradeInAmountDecimal)
-                    AutoPurchases.Calc()
+
 
                     accessoriesFinishLabel.Text = AutoPurchases.AccessoriesAndFinish.ToString("n")
                     subTotalBox.Text = AutoPurchases.Subtotal.ToString("n")

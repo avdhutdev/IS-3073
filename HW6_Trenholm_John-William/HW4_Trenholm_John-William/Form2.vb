@@ -9,11 +9,11 @@ Public Class Form2
     End Sub
     'opens up the about window.
     Private Sub AboutToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles AboutToolStripMenuItem.Click
-        AboutBox1.ShowDialog()
+        AboutBox1.Show()
     End Sub
     'Calls the remote form
     Private Sub InputSaleToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles InputSaleToolStripMenuItem.Click
-        vbinfo.ShowDialog()
+        vbinfo.Show()
     End Sub
     'Calls the remote form's color
     Private Sub ColorToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ColorToolStripMenuItem.Click

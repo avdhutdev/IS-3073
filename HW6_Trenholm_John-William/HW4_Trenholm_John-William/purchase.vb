@@ -33,7 +33,19 @@ Public Class Purchases
         customMethod() = CustomIn
         CarSalesPrice() = CarSalesPriceIn
         TradeinAmount() = TradeinAmountIn
+        CalcAccessoriesFinish(StereoMethod(), LeatherMethod(), PearlizedMethod(), customMethod(), ComputerMethod())
 
+        CalcSubTotal(CarSalesPrice(), AccessoriesAndFinish())
+
+        CalcTax(Subtotal())
+
+        CalcTotal(Subtotal(), SalesTax())
+
+        CalcAmountDue(Total(), TradeinAmount())
+
+        CalcTrade(Trade())
+
+        Summary()
     End Sub
     'Constructor Method
     Property StereoMethod() As Boolean
@@ -176,19 +188,7 @@ Public Class Purchases
     End Property
     'Calls calc methods
     Public Sub Calc()
-        CalcAccessoriesFinish(StereoMethod(), LeatherMethod(), PearlizedMethod(), customMethod(), ComputerMethod())
 
-        CalcSubTotal(CarSalesPrice(), AccessoriesAndFinish())
-
-        CalcTax(Subtotal())
-
-        CalcTotal(Subtotal(), SalesTax())
-
-        CalcAmountDue(Total(), TradeinAmount())
-
-        CalcTrade(Trade())
-
-        Summary()
 
     End Sub
     'Calculation Method
