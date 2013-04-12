@@ -16,7 +16,7 @@ Public Class vbinfo
 
                 If standardRadio.Checked() Or pearlRadio.Checked() Or customizedRadio.Checked() Then
                     AutoPurchases = New Purchases(stereoCheckbox.Checked, leatherCheckbox.Checked, navigationCheckbox.Checked, _
-                                                  pearlRadio.Checked, customizedRadio.Checked, CarSalesPriceDeciaml, TradeInAmountDecimal)
+                        pearlRadio.Checked, customizedRadio.Checked, CarSalesPriceDeciaml, TradeInAmountDecimal)
 
 
                     accessoriesFinishLabel.Text = AutoPurchases.AccessoriesAndFinish.ToString("n")
@@ -40,12 +40,7 @@ Public Class vbinfo
         End Try
 
     End Sub
-    'function to calc tax rate
-    Private Function calcTaxRax(ByVal salesPrice As Decimal)
-        Const TAX_RATE_Decimal As Decimal = 0.08D
 
-        Return salesPrice * TAX_RATE_Decimal
-    End Function
     'clears the values.
     Private Sub clearButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles clearButton.Click
         stereoCheckbox.Checked = False
@@ -95,9 +90,5 @@ Public Class vbinfo
 
     Private Sub summary_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles summary.Click
         summaryForm.ShowDialog()
-    End Sub
-
-    Private Sub amountDueBox_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles amountDueBox.TextChanged
-
     End Sub
 End Class

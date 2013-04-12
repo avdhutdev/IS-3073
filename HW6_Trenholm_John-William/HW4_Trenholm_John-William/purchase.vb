@@ -1,12 +1,13 @@
 ﻿'Project: Homework 7
 'Programmer: John-William Trenholm
 'Date: 4-7-2013
-'Description: Calculations, menus, functions oh my.
+'Description: Calculations, objects, functions oh my.
 Public Class Purchases
     'Class Variables
     Private StereoBoolean, LeatherBoolean, ComputerBoolean, PearlizedBoolean, CustomBoolean As Boolean
-    Private CarSalesPriceDeciaml, TradeinAmountDecimal As Decimal
-    Private AccessoriesAndFinishDecimal, SubtotalDeciaml, SalesTaxDecimal, TotalDecimal, TradeDecimal, AmountDueDecimal As Decimal
+    Private setCarSalesPriceDeciaml, setTradeinAmountDecimal As Decimal
+    Shared AccessoriesAndFinishDecimal, SubtotalDeciaml, SalesTaxDecimal, TotalDecimal, TradeDecimal, AmountDueDecimal As Decimal
+    Private stereoDecimal, leatherDecimal, computerDecimal, finishDecimal As Decimal
 
     'Constaints
     Const PEARLIZEDFINISH As Decimal = 345.72D
@@ -23,32 +24,21 @@ Public Class Purchases
     '7 Constructor variables
     Public Sub New(ByVal StereoIn As Boolean, ByVal LeatherIn As Boolean, ByVal ComputerIn As Boolean, _
                    ByVal PearlizedIn As Boolean, ByVal CustomIn As Boolean, _
-                   ByVal CarSalesPriceIn As Decimal, ByVal TradeinAmountIn As Decimal)
+                   ByVal setCarSalesPriceIn As Decimal, ByVal setTradeinAmountIn As Decimal)
 
         'Constructor Methods
-        StereoMethod() = StereoIn
-        LeatherMethod() = LeatherIn
-        ComputerMethod() = ComputerIn
-        PearlizedMethod() = PearlizedIn
-        customMethod() = CustomIn
-        CarSalesPrice() = CarSalesPriceIn
-        TradeinAmount() = TradeinAmountIn
-        CalcAccessoriesFinish(StereoMethod(), LeatherMethod(), PearlizedMethod(), customMethod(), ComputerMethod())
-
-        CalcSubTotal(CarSalesPrice(), AccessoriesAndFinish())
-
-        CalcTax(Subtotal())
-
-        CalcTotal(Subtotal(), SalesTax())
-
-        CalcAmountDue(Total(), TradeinAmount())
-
-        CalcTrade(Trade())
-
-        Summary()
+        setStereo() = StereoIn
+        setLeather() = LeatherIn
+        setComputer() = ComputerIn
+        setPearlized() = PearlizedIn
+        setCustom() = CustomIn
+        setCarSalesPrice() = setCarSalesPriceIn
+        setTradeinAmount() = setTradeinAmountIn
+        Calc()
     End Sub
+
     'Constructor Method
-    Property StereoMethod() As Boolean
+    Property setStereo() As Boolean
         Get
             Return StereoBoolean
         End Get
@@ -57,7 +47,7 @@ Public Class Purchases
         End Set
     End Property
     'Constructor Method
-    Property LeatherMethod() As Boolean
+    Property setLeather() As Boolean
         Get
             Return LeatherBoolean
         End Get
@@ -66,7 +56,7 @@ Public Class Purchases
         End Set
     End Property
     'Constructor Method
-    Property ComputerMethod() As Boolean
+    Property setComputer() As Boolean
         Get
             Return ComputerBoolean
         End Get
@@ -75,7 +65,7 @@ Public Class Purchases
         End Set
     End Property
     'Constructor Method
-    Property PearlizedMethod() As Boolean
+    Property setPearlized() As Boolean
         Get
             Return PearlizedBoolean
         End Get
@@ -84,7 +74,7 @@ Public Class Purchases
         End Set
     End Property
     'Constructor Method
-    Property customMethod() As Boolean
+    Property setCustom() As Boolean
         Get
             Return CustomBoolean
         End Get
@@ -93,24 +83,24 @@ Public Class Purchases
         End Set
     End Property
     'Constructor Method
-    Property CarSalesPrice() As Decimal
+    Property setCarSalesPrice() As Decimal
         Get
-            Return CarSalesPriceDeciaml
+            Return setCarSalesPriceDeciaml
         End Get
         Set(ByVal Value As Decimal)
             If Value >= 0 Then
-                CarSalesPriceDeciaml = Value
+                setCarSalesPriceDeciaml = Value
             End If
         End Set
     End Property
     'Constructor Method
-    Property TradeinAmount() As Decimal
+    Property setTradeinAmount() As Decimal
         Get
-            Return TradeinAmountDecimal
+            Return setTradeinAmountDecimal
         End Get
         Set(ByVal Value As Decimal)
             If Value >= 0 Then
-                TradeinAmountDecimal = Value
+                setTradeinAmountDecimal = Value
             End If
         End Set
     End Property
@@ -138,16 +128,16 @@ Public Class Purchases
             Return SalesTaxDecimal
         End Get
         Set(ByVal value As Decimal)
-            SalesTaxDecimal = value
+            SalesTaxDecimal = value * TAX
         End Set
     End Property
     'Trade Method
-    Property Trade() As Decimal
+    Property TradeinAmount() As Decimal
         Get
-            Return TradeinAmountDecimal
+            Return setTradeinAmountDecimal
         End Get
         Set(ByVal value As Decimal)
-            TradeinAmountDecimal = value
+            setTradeinAmountDecimal = value
         End Set
     End Property
     'Total Method
@@ -168,91 +158,64 @@ Public Class Purchases
             AmountDueDecimal = value
         End Set
     End Property
-    'Summary Method
-    Shared ReadOnly Property NumberOfSales() As Integer
+    Shared Property NumberOfSales() As Decimal
         Get
             Return NumberOfSalesInteger
         End Get
+        Set(ByVal value As Decimal)
+            NumberOfSalesInteger = +1
+        End Set
     End Property
-    'Summary Method
-    Shared ReadOnly Property TotalTradeIns() As Decimal
+    Shared Property TotalTradeIns() As Decimal
         Get
             Return TotalTradeDecimal
         End Get
+        Set(ByVal value As Decimal)
+            TotalTradeDecimal = +1
+        End Set
     End Property
-    'Summary Method
-    Shared ReadOnly Property TotalSales() As Decimal
+    Shared Property TotalSales() As Decimal
         Get
-            Return TotalSalesDecimal
+            Return TotalDecimal
         End Get
+        Set(ByVal value As Decimal)
+
+        End Set
     End Property
-    'Calls calc methods
+    'Calc method
     Public Sub Calc()
-
-
-    End Sub
-    'Calculation Method
-    Protected Sub CalcAccessoriesFinish(ByVal Stereo As Boolean, ByVal Leather As Boolean, _
-                   ByVal Pearlized As Boolean, ByVal Custom As Boolean, ByVal Computer As Boolean)
-
-        Dim stereoDecimal, leatherDecimal, computerDecimal, FinishDecimal As Decimal
-
-        'If statements to determine values of accessories and finish
-        If Stereo Then
+        If setStereo Then
             stereoDecimal = STEREOSYSTEM
         Else
             stereoDecimal = 0D
         End If
 
-        If Leather Then
+        If setLeather Then
             leatherDecimal = LEATHERINT
         Else
             leatherDecimal = 0D
         End If
 
-        If Computer Then
+        If setComputer Then
             computerDecimal = COMPUTERSYS
         Else
             computerDecimal = 0D
         End If
 
-        If Pearlized Then
+        If setPearlized Then
             FinishDecimal = PEARLIZEDFINISH
-        ElseIf Custom Then
+        ElseIf setCustom Then
             FinishDecimal = CUSTOMFINISH
         Else
             FinishDecimal = 0D
         End If
-
-        'Sums all to Accessories and finish
-        AccessoriesAndFinish() = stereoDecimal + leatherDecimal + computerDecimal + FinishDecimal
-
-    End Sub
-    'Calculation Method Adds sales price and accessories/finish
-    Protected Sub CalcSubTotal(ByVal SalesPriceDecimal As Decimal, ByVal AccessoriesFinish As Decimal)
-        Subtotal() = SalesPriceDecimal + AccessoriesFinish
-    End Sub
-    'Calculation Method Calculates TAX
-    Protected Sub CalcTax(ByVal Subtotal As Decimal)
-        SalesTax() = Subtotal * TAX
-    End Sub
-    'Calculation Method Calculates Total
-    Protected Sub CalcTotal(ByVal Subtotal As Decimal, ByVal TaxDecimal As Decimal)
-        Total() = Subtotal + TaxDecimal
-    End Sub
-    'Calculation Method Sums Trade
-    Protected Sub CalcTrade(ByVal TotalTrade As Decimal)
-        Trade() = TotalTrade
-    End Sub
-    'Calculation Method Amount Due
-    Protected Sub CalcAmountDue(ByVal TotalDecimal As Decimal, ByVal TradeInDecimal As Decimal)
-        AmtDue() = TotalDecimal - TradeInDecimal
-    End Sub
-    'Summary Method
-    Protected Sub Summary()
-        'Summary form values
-        NumberOfSalesInteger += 1
-        TotalTradeDecimal += TradeinAmountDecimal
-        TotalSalesDecimal += TotalDecimal
+        AccessoriesAndFinish() = stereoDecimal + leatherDecimal + computerDecimal + finishDecimal
+        Subtotal() = setCarSalesPrice() + stereoDecimal + leatherDecimal + computerDecimal + finishDecimal
+        SalesTax() = Subtotal()
+        Total() = SalesTax + Subtotal()
+        AmtDue() = (SalesTax() + Subtotal()) - TradeinAmount
+        NumberOfSales() += 1
+        TotalTradeIns() += setTradeinAmountDecimal
+        TotalSales() += TotalDecimal + AmtDue()
     End Sub
 End Class
