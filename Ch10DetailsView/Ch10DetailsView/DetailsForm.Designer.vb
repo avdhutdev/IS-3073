@@ -22,176 +22,357 @@ Partial Class DetailsForm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Label1 = New System.Windows.Forms.Label
-        Me.isbnTextBox = New System.Windows.Forms.TextBox
-        Me.authorTextBox = New System.Windows.Forms.TextBox
-        Me.authorLabel = New System.Windows.Forms.Label
-        Me.subjectCodeTextBox = New System.Windows.Forms.TextBox
-        Me.Label3 = New System.Windows.Forms.Label
-        Me.shelfLocationTextBox = New System.Windows.Forms.TextBox
-        Me.Label4 = New System.Windows.Forms.Label
-        Me.publisherTextBox = New System.Windows.Forms.TextBox
-        Me.Label5 = New System.Windows.Forms.Label
-        Me.titleTextBox = New System.Windows.Forms.TextBox
-        Me.Label6 = New System.Windows.Forms.Label
-        Me.Label2 = New System.Windows.Forms.Label
-        Me.CheckBox1 = New System.Windows.Forms.CheckBox
+        Me.components = New System.ComponentModel.Container
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(DetailsForm))
+        Dim ISBNLabel As System.Windows.Forms.Label
+        Dim TitleLabel As System.Windows.Forms.Label
+        Dim AuthorLabel As System.Windows.Forms.Label
+        Dim PublisherLabel As System.Windows.Forms.Label
+        Dim Subject_CodeLabel As System.Windows.Forms.Label
+        Dim Shelf_LocationLabel As System.Windows.Forms.Label
+        Dim FictionLabel As System.Windows.Forms.Label
+        Me.RnrBooksDataSet = New Ch10DetailsView.RnrBooksDataSet
+        Me.BooksBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.BooksTableAdapter = New Ch10DetailsView.RnrBooksDataSetTableAdapters.BooksTableAdapter
+        Me.TableAdapterManager = New Ch10DetailsView.RnrBooksDataSetTableAdapters.TableAdapterManager
+        Me.BooksBindingNavigator = New System.Windows.Forms.BindingNavigator(Me.components)
+        Me.BindingNavigatorMoveFirstItem = New System.Windows.Forms.ToolStripButton
+        Me.BindingNavigatorMovePreviousItem = New System.Windows.Forms.ToolStripButton
+        Me.BindingNavigatorSeparator = New System.Windows.Forms.ToolStripSeparator
+        Me.BindingNavigatorPositionItem = New System.Windows.Forms.ToolStripTextBox
+        Me.BindingNavigatorCountItem = New System.Windows.Forms.ToolStripLabel
+        Me.BindingNavigatorSeparator1 = New System.Windows.Forms.ToolStripSeparator
+        Me.BindingNavigatorMoveNextItem = New System.Windows.Forms.ToolStripButton
+        Me.BindingNavigatorMoveLastItem = New System.Windows.Forms.ToolStripButton
+        Me.BindingNavigatorSeparator2 = New System.Windows.Forms.ToolStripSeparator
+        Me.BindingNavigatorAddNewItem = New System.Windows.Forms.ToolStripButton
+        Me.BindingNavigatorDeleteItem = New System.Windows.Forms.ToolStripButton
+        Me.BooksBindingNavigatorSaveItem = New System.Windows.Forms.ToolStripButton
+        Me.ISBNTextBox = New System.Windows.Forms.TextBox
+        Me.TitleTextBox = New System.Windows.Forms.TextBox
+        Me.AuthorTextBox = New System.Windows.Forms.TextBox
+        Me.PublisherTextBox = New System.Windows.Forms.TextBox
+        Me.Subject_CodeTextBox = New System.Windows.Forms.TextBox
+        Me.Shelf_LocationTextBox = New System.Windows.Forms.TextBox
+        Me.FictionCheckBox = New System.Windows.Forms.CheckBox
+        ISBNLabel = New System.Windows.Forms.Label
+        TitleLabel = New System.Windows.Forms.Label
+        AuthorLabel = New System.Windows.Forms.Label
+        PublisherLabel = New System.Windows.Forms.Label
+        Subject_CodeLabel = New System.Windows.Forms.Label
+        Shelf_LocationLabel = New System.Windows.Forms.Label
+        FictionLabel = New System.Windows.Forms.Label
+        CType(Me.RnrBooksDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.BooksBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.BooksBindingNavigator, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.BooksBindingNavigator.SuspendLayout()
         Me.SuspendLayout()
         '
-        'Label1
+        'RnrBooksDataSet
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(30, 26)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(35, 13)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "ISBN:"
+        Me.RnrBooksDataSet.DataSetName = "RnrBooksDataSet"
+        Me.RnrBooksDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
-        'isbnTextBox
+        'BooksBindingSource
         '
-        Me.isbnTextBox.Location = New System.Drawing.Point(118, 26)
-        Me.isbnTextBox.Name = "isbnTextBox"
-        Me.isbnTextBox.Size = New System.Drawing.Size(100, 20)
-        Me.isbnTextBox.TabIndex = 1
+        Me.BooksBindingSource.DataMember = "Books"
+        Me.BooksBindingSource.DataSource = Me.RnrBooksDataSet
         '
-        'authorTextBox
+        'BooksTableAdapter
         '
-        Me.authorTextBox.Location = New System.Drawing.Point(118, 92)
-        Me.authorTextBox.Name = "authorTextBox"
-        Me.authorTextBox.Size = New System.Drawing.Size(100, 20)
-        Me.authorTextBox.TabIndex = 3
+        Me.BooksTableAdapter.ClearBeforeFill = True
         '
-        'authorLabel
+        'TableAdapterManager
         '
-        Me.authorLabel.AutoSize = True
-        Me.authorLabel.Location = New System.Drawing.Point(30, 92)
-        Me.authorLabel.Name = "authorLabel"
-        Me.authorLabel.Size = New System.Drawing.Size(38, 13)
-        Me.authorLabel.TabIndex = 2
-        Me.authorLabel.Text = "Author"
+        Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
+        Me.TableAdapterManager.BooksTableAdapter = Me.BooksTableAdapter
+        Me.TableAdapterManager.UpdateOrder = Ch10DetailsView.RnrBooksDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         '
-        'subjectCodeTextBox
+        'BooksBindingNavigator
         '
-        Me.subjectCodeTextBox.Location = New System.Drawing.Point(120, 156)
-        Me.subjectCodeTextBox.Name = "subjectCodeTextBox"
-        Me.subjectCodeTextBox.Size = New System.Drawing.Size(100, 20)
-        Me.subjectCodeTextBox.TabIndex = 5
+        Me.BooksBindingNavigator.AddNewItem = Me.BindingNavigatorAddNewItem
+        Me.BooksBindingNavigator.BindingSource = Me.BooksBindingSource
+        Me.BooksBindingNavigator.CountItem = Me.BindingNavigatorCountItem
+        Me.BooksBindingNavigator.DeleteItem = Me.BindingNavigatorDeleteItem
+        Me.BooksBindingNavigator.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.BindingNavigatorMoveFirstItem, Me.BindingNavigatorMovePreviousItem, Me.BindingNavigatorSeparator, Me.BindingNavigatorPositionItem, Me.BindingNavigatorCountItem, Me.BindingNavigatorSeparator1, Me.BindingNavigatorMoveNextItem, Me.BindingNavigatorMoveLastItem, Me.BindingNavigatorSeparator2, Me.BindingNavigatorAddNewItem, Me.BindingNavigatorDeleteItem, Me.BooksBindingNavigatorSaveItem})
+        Me.BooksBindingNavigator.Location = New System.Drawing.Point(0, 0)
+        Me.BooksBindingNavigator.MoveFirstItem = Me.BindingNavigatorMoveFirstItem
+        Me.BooksBindingNavigator.MoveLastItem = Me.BindingNavigatorMoveLastItem
+        Me.BooksBindingNavigator.MoveNextItem = Me.BindingNavigatorMoveNextItem
+        Me.BooksBindingNavigator.MovePreviousItem = Me.BindingNavigatorMovePreviousItem
+        Me.BooksBindingNavigator.Name = "BooksBindingNavigator"
+        Me.BooksBindingNavigator.PositionItem = Me.BindingNavigatorPositionItem
+        Me.BooksBindingNavigator.Size = New System.Drawing.Size(469, 25)
+        Me.BooksBindingNavigator.TabIndex = 0
+        Me.BooksBindingNavigator.Text = "BindingNavigator1"
         '
-        'Label3
+        'BindingNavigatorMoveFirstItem
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(30, 159)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(74, 13)
-        Me.Label3.TabIndex = 4
-        Me.Label3.Text = "Subject Code:"
+        Me.BindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.BindingNavigatorMoveFirstItem.Image = CType(resources.GetObject("BindingNavigatorMoveFirstItem.Image"), System.Drawing.Image)
+        Me.BindingNavigatorMoveFirstItem.Name = "BindingNavigatorMoveFirstItem"
+        Me.BindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = True
+        Me.BindingNavigatorMoveFirstItem.Size = New System.Drawing.Size(23, 22)
+        Me.BindingNavigatorMoveFirstItem.Text = "Move first"
         '
-        'shelfLocationTextBox
+        'BindingNavigatorMovePreviousItem
         '
-        Me.shelfLocationTextBox.Location = New System.Drawing.Point(120, 196)
-        Me.shelfLocationTextBox.Name = "shelfLocationTextBox"
-        Me.shelfLocationTextBox.Size = New System.Drawing.Size(100, 20)
-        Me.shelfLocationTextBox.TabIndex = 7
+        Me.BindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.BindingNavigatorMovePreviousItem.Image = CType(resources.GetObject("BindingNavigatorMovePreviousItem.Image"), System.Drawing.Image)
+        Me.BindingNavigatorMovePreviousItem.Name = "BindingNavigatorMovePreviousItem"
+        Me.BindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = True
+        Me.BindingNavigatorMovePreviousItem.Size = New System.Drawing.Size(23, 22)
+        Me.BindingNavigatorMovePreviousItem.Text = "Move previous"
         '
-        'Label4
+        'BindingNavigatorSeparator
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(30, 196)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(78, 13)
-        Me.Label4.TabIndex = 6
-        Me.Label4.Text = "Shelf Location:"
+        Me.BindingNavigatorSeparator.Name = "BindingNavigatorSeparator"
+        Me.BindingNavigatorSeparator.Size = New System.Drawing.Size(6, 25)
         '
-        'publisherTextBox
+        'BindingNavigatorPositionItem
         '
-        Me.publisherTextBox.Location = New System.Drawing.Point(120, 123)
-        Me.publisherTextBox.Name = "publisherTextBox"
-        Me.publisherTextBox.Size = New System.Drawing.Size(100, 20)
-        Me.publisherTextBox.TabIndex = 9
+        Me.BindingNavigatorPositionItem.AccessibleName = "Position"
+        Me.BindingNavigatorPositionItem.AutoSize = False
+        Me.BindingNavigatorPositionItem.Name = "BindingNavigatorPositionItem"
+        Me.BindingNavigatorPositionItem.Size = New System.Drawing.Size(50, 23)
+        Me.BindingNavigatorPositionItem.Text = "0"
+        Me.BindingNavigatorPositionItem.ToolTipText = "Current position"
         '
-        'Label5
+        'BindingNavigatorCountItem
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(30, 130)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(53, 13)
-        Me.Label5.TabIndex = 8
-        Me.Label5.Text = "Publisher:"
+        Me.BindingNavigatorCountItem.Name = "BindingNavigatorCountItem"
+        Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(35, 15)
+        Me.BindingNavigatorCountItem.Text = "of {0}"
+        Me.BindingNavigatorCountItem.ToolTipText = "Total number of items"
         '
-        'titleTextBox
+        'BindingNavigatorSeparator1
         '
-        Me.titleTextBox.Location = New System.Drawing.Point(118, 60)
-        Me.titleTextBox.Name = "titleTextBox"
-        Me.titleTextBox.Size = New System.Drawing.Size(100, 20)
-        Me.titleTextBox.TabIndex = 11
+        Me.BindingNavigatorSeparator1.Name = "BindingNavigatorSeparator"
+        Me.BindingNavigatorSeparator1.Size = New System.Drawing.Size(6, 6)
         '
-        'Label6
+        'BindingNavigatorMoveNextItem
         '
-        Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(30, 60)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(30, 13)
-        Me.Label6.TabIndex = 10
-        Me.Label6.Text = "Title:"
+        Me.BindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.BindingNavigatorMoveNextItem.Image = CType(resources.GetObject("BindingNavigatorMoveNextItem.Image"), System.Drawing.Image)
+        Me.BindingNavigatorMoveNextItem.Name = "BindingNavigatorMoveNextItem"
+        Me.BindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = True
+        Me.BindingNavigatorMoveNextItem.Size = New System.Drawing.Size(23, 20)
+        Me.BindingNavigatorMoveNextItem.Text = "Move next"
         '
-        'Label2
+        'BindingNavigatorMoveLastItem
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(30, 227)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(41, 13)
-        Me.Label2.TabIndex = 12
-        Me.Label2.Text = "Fiction:"
+        Me.BindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.BindingNavigatorMoveLastItem.Image = CType(resources.GetObject("BindingNavigatorMoveLastItem.Image"), System.Drawing.Image)
+        Me.BindingNavigatorMoveLastItem.Name = "BindingNavigatorMoveLastItem"
+        Me.BindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = True
+        Me.BindingNavigatorMoveLastItem.Size = New System.Drawing.Size(23, 20)
+        Me.BindingNavigatorMoveLastItem.Text = "Move last"
         '
-        'CheckBox1
+        'BindingNavigatorSeparator2
         '
-        Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Checked = True
-        Me.CheckBox1.CheckState = System.Windows.Forms.CheckState.Checked
-        Me.CheckBox1.Location = New System.Drawing.Point(118, 227)
-        Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox1.TabIndex = 13
-        Me.CheckBox1.UseVisualStyleBackColor = True
+        Me.BindingNavigatorSeparator2.Name = "BindingNavigatorSeparator"
+        Me.BindingNavigatorSeparator2.Size = New System.Drawing.Size(6, 6)
+        '
+        'BindingNavigatorAddNewItem
+        '
+        Me.BindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.BindingNavigatorAddNewItem.Image = CType(resources.GetObject("BindingNavigatorAddNewItem.Image"), System.Drawing.Image)
+        Me.BindingNavigatorAddNewItem.Name = "BindingNavigatorAddNewItem"
+        Me.BindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = True
+        Me.BindingNavigatorAddNewItem.Size = New System.Drawing.Size(23, 22)
+        Me.BindingNavigatorAddNewItem.Text = "Add new"
+        '
+        'BindingNavigatorDeleteItem
+        '
+        Me.BindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.BindingNavigatorDeleteItem.Image = CType(resources.GetObject("BindingNavigatorDeleteItem.Image"), System.Drawing.Image)
+        Me.BindingNavigatorDeleteItem.Name = "BindingNavigatorDeleteItem"
+        Me.BindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = True
+        Me.BindingNavigatorDeleteItem.Size = New System.Drawing.Size(23, 20)
+        Me.BindingNavigatorDeleteItem.Text = "Delete"
+        '
+        'BooksBindingNavigatorSaveItem
+        '
+        Me.BooksBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.BooksBindingNavigatorSaveItem.Image = CType(resources.GetObject("BooksBindingNavigatorSaveItem.Image"), System.Drawing.Image)
+        Me.BooksBindingNavigatorSaveItem.Name = "BooksBindingNavigatorSaveItem"
+        Me.BooksBindingNavigatorSaveItem.Size = New System.Drawing.Size(23, 23)
+        Me.BooksBindingNavigatorSaveItem.Text = "Save Data"
+        '
+        'ISBNLabel
+        '
+        ISBNLabel.AutoSize = True
+        ISBNLabel.Location = New System.Drawing.Point(98, 59)
+        ISBNLabel.Name = "ISBNLabel"
+        ISBNLabel.Size = New System.Drawing.Size(35, 13)
+        ISBNLabel.TabIndex = 1
+        ISBNLabel.Text = "ISBN:"
+        '
+        'ISBNTextBox
+        '
+        Me.ISBNTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.BooksBindingSource, "ISBN", True))
+        Me.ISBNTextBox.Location = New System.Drawing.Point(182, 56)
+        Me.ISBNTextBox.Name = "ISBNTextBox"
+        Me.ISBNTextBox.Size = New System.Drawing.Size(104, 20)
+        Me.ISBNTextBox.TabIndex = 2
+        '
+        'TitleLabel
+        '
+        TitleLabel.AutoSize = True
+        TitleLabel.Location = New System.Drawing.Point(98, 85)
+        TitleLabel.Name = "TitleLabel"
+        TitleLabel.Size = New System.Drawing.Size(30, 13)
+        TitleLabel.TabIndex = 3
+        TitleLabel.Text = "Title:"
+        '
+        'TitleTextBox
+        '
+        Me.TitleTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.BooksBindingSource, "Title", True))
+        Me.TitleTextBox.Location = New System.Drawing.Point(182, 82)
+        Me.TitleTextBox.Name = "TitleTextBox"
+        Me.TitleTextBox.Size = New System.Drawing.Size(104, 20)
+        Me.TitleTextBox.TabIndex = 4
+        '
+        'AuthorLabel
+        '
+        AuthorLabel.AutoSize = True
+        AuthorLabel.Location = New System.Drawing.Point(98, 111)
+        AuthorLabel.Name = "AuthorLabel"
+        AuthorLabel.Size = New System.Drawing.Size(41, 13)
+        AuthorLabel.TabIndex = 5
+        AuthorLabel.Text = "Author:"
+        '
+        'AuthorTextBox
+        '
+        Me.AuthorTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.BooksBindingSource, "Author", True))
+        Me.AuthorTextBox.Location = New System.Drawing.Point(182, 108)
+        Me.AuthorTextBox.Name = "AuthorTextBox"
+        Me.AuthorTextBox.Size = New System.Drawing.Size(104, 20)
+        Me.AuthorTextBox.TabIndex = 6
+        '
+        'PublisherLabel
+        '
+        PublisherLabel.AutoSize = True
+        PublisherLabel.Location = New System.Drawing.Point(98, 137)
+        PublisherLabel.Name = "PublisherLabel"
+        PublisherLabel.Size = New System.Drawing.Size(53, 13)
+        PublisherLabel.TabIndex = 7
+        PublisherLabel.Text = "Publisher:"
+        '
+        'PublisherTextBox
+        '
+        Me.PublisherTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.BooksBindingSource, "Publisher", True))
+        Me.PublisherTextBox.Location = New System.Drawing.Point(182, 134)
+        Me.PublisherTextBox.Name = "PublisherTextBox"
+        Me.PublisherTextBox.Size = New System.Drawing.Size(104, 20)
+        Me.PublisherTextBox.TabIndex = 8
+        '
+        'Subject_CodeLabel
+        '
+        Subject_CodeLabel.AutoSize = True
+        Subject_CodeLabel.Location = New System.Drawing.Point(98, 163)
+        Subject_CodeLabel.Name = "Subject_CodeLabel"
+        Subject_CodeLabel.Size = New System.Drawing.Size(74, 13)
+        Subject_CodeLabel.TabIndex = 9
+        Subject_CodeLabel.Text = "Subject Code:"
+        '
+        'Subject_CodeTextBox
+        '
+        Me.Subject_CodeTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.BooksBindingSource, "Subject_Code", True))
+        Me.Subject_CodeTextBox.Location = New System.Drawing.Point(182, 160)
+        Me.Subject_CodeTextBox.Name = "Subject_CodeTextBox"
+        Me.Subject_CodeTextBox.Size = New System.Drawing.Size(104, 20)
+        Me.Subject_CodeTextBox.TabIndex = 10
+        '
+        'Shelf_LocationLabel
+        '
+        Shelf_LocationLabel.AutoSize = True
+        Shelf_LocationLabel.Location = New System.Drawing.Point(98, 189)
+        Shelf_LocationLabel.Name = "Shelf_LocationLabel"
+        Shelf_LocationLabel.Size = New System.Drawing.Size(78, 13)
+        Shelf_LocationLabel.TabIndex = 11
+        Shelf_LocationLabel.Text = "Shelf Location:"
+        '
+        'Shelf_LocationTextBox
+        '
+        Me.Shelf_LocationTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.BooksBindingSource, "Shelf_Location", True))
+        Me.Shelf_LocationTextBox.Location = New System.Drawing.Point(182, 186)
+        Me.Shelf_LocationTextBox.Name = "Shelf_LocationTextBox"
+        Me.Shelf_LocationTextBox.Size = New System.Drawing.Size(104, 20)
+        Me.Shelf_LocationTextBox.TabIndex = 12
+        '
+        'FictionLabel
+        '
+        FictionLabel.AutoSize = True
+        FictionLabel.Location = New System.Drawing.Point(98, 217)
+        FictionLabel.Name = "FictionLabel"
+        FictionLabel.Size = New System.Drawing.Size(41, 13)
+        FictionLabel.TabIndex = 13
+        FictionLabel.Text = "Fiction:"
+        '
+        'FictionCheckBox
+        '
+        Me.FictionCheckBox.DataBindings.Add(New System.Windows.Forms.Binding("CheckState", Me.BooksBindingSource, "Fiction", True))
+        Me.FictionCheckBox.Location = New System.Drawing.Point(182, 212)
+        Me.FictionCheckBox.Name = "FictionCheckBox"
+        Me.FictionCheckBox.Size = New System.Drawing.Size(104, 24)
+        Me.FictionCheckBox.TabIndex = 14
+        Me.FictionCheckBox.UseVisualStyleBackColor = True
         '
         'DetailsForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(284, 262)
-        Me.Controls.Add(Me.CheckBox1)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.titleTextBox)
-        Me.Controls.Add(Me.Label6)
-        Me.Controls.Add(Me.publisherTextBox)
-        Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.shelfLocationTextBox)
-        Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.subjectCodeTextBox)
-        Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.authorTextBox)
-        Me.Controls.Add(Me.authorLabel)
-        Me.Controls.Add(Me.isbnTextBox)
-        Me.Controls.Add(Me.Label1)
+        Me.ClientSize = New System.Drawing.Size(469, 302)
+        Me.Controls.Add(ISBNLabel)
+        Me.Controls.Add(Me.ISBNTextBox)
+        Me.Controls.Add(TitleLabel)
+        Me.Controls.Add(Me.TitleTextBox)
+        Me.Controls.Add(AuthorLabel)
+        Me.Controls.Add(Me.AuthorTextBox)
+        Me.Controls.Add(PublisherLabel)
+        Me.Controls.Add(Me.PublisherTextBox)
+        Me.Controls.Add(Subject_CodeLabel)
+        Me.Controls.Add(Me.Subject_CodeTextBox)
+        Me.Controls.Add(Shelf_LocationLabel)
+        Me.Controls.Add(Me.Shelf_LocationTextBox)
+        Me.Controls.Add(FictionLabel)
+        Me.Controls.Add(Me.FictionCheckBox)
+        Me.Controls.Add(Me.BooksBindingNavigator)
         Me.Name = "DetailsForm"
         Me.Text = "R ’n R Books Detail View"
+        CType(Me.RnrBooksDataSet, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.BooksBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.BooksBindingNavigator, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.BooksBindingNavigator.ResumeLayout(False)
+        Me.BooksBindingNavigator.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents isbnTextBox As System.Windows.Forms.TextBox
-    Friend WithEvents authorTextBox As System.Windows.Forms.TextBox
-    Friend WithEvents authorLabel As System.Windows.Forms.Label
-    Friend WithEvents subjectCodeTextBox As System.Windows.Forms.TextBox
-    Friend WithEvents Label3 As System.Windows.Forms.Label
-    Friend WithEvents shelfLocationTextBox As System.Windows.Forms.TextBox
-    Friend WithEvents Label4 As System.Windows.Forms.Label
-    Friend WithEvents publisherTextBox As System.Windows.Forms.TextBox
-    Friend WithEvents Label5 As System.Windows.Forms.Label
-    Private WithEvents titleTextBox As System.Windows.Forms.TextBox
-    Private WithEvents Label6 As System.Windows.Forms.Label
-    Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents CheckBox1 As System.Windows.Forms.CheckBox
+    Friend WithEvents RnrBooksDataSet As Ch10DetailsView.RnrBooksDataSet
+    Friend WithEvents BooksBindingSource As System.Windows.Forms.BindingSource
+    Friend WithEvents BooksTableAdapter As Ch10DetailsView.RnrBooksDataSetTableAdapters.BooksTableAdapter
+    Friend WithEvents TableAdapterManager As Ch10DetailsView.RnrBooksDataSetTableAdapters.TableAdapterManager
+    Friend WithEvents BooksBindingNavigator As System.Windows.Forms.BindingNavigator
+    Friend WithEvents BindingNavigatorAddNewItem As System.Windows.Forms.ToolStripButton
+    Friend WithEvents BindingNavigatorCountItem As System.Windows.Forms.ToolStripLabel
+    Friend WithEvents BindingNavigatorDeleteItem As System.Windows.Forms.ToolStripButton
+    Friend WithEvents BindingNavigatorMoveFirstItem As System.Windows.Forms.ToolStripButton
+    Friend WithEvents BindingNavigatorMovePreviousItem As System.Windows.Forms.ToolStripButton
+    Friend WithEvents BindingNavigatorSeparator As System.Windows.Forms.ToolStripSeparator
+    Friend WithEvents BindingNavigatorPositionItem As System.Windows.Forms.ToolStripTextBox
+    Friend WithEvents BindingNavigatorSeparator1 As System.Windows.Forms.ToolStripSeparator
+    Friend WithEvents BindingNavigatorMoveNextItem As System.Windows.Forms.ToolStripButton
+    Friend WithEvents BindingNavigatorMoveLastItem As System.Windows.Forms.ToolStripButton
+    Friend WithEvents BindingNavigatorSeparator2 As System.Windows.Forms.ToolStripSeparator
+    Friend WithEvents BooksBindingNavigatorSaveItem As System.Windows.Forms.ToolStripButton
+    Friend WithEvents ISBNTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents TitleTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents AuthorTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents PublisherTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents Subject_CodeTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents Shelf_LocationTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents FictionCheckBox As System.Windows.Forms.CheckBox
 
 End Class

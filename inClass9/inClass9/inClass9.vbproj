@@ -109,11 +109,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="RnrBooksDataSet.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>RnrBooksDataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="RnrBooksDataSet1.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -147,17 +142,6 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <CustomToolNamespace>My</CustomToolNamespace>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
-    </None>
-    <None Include="RnrBooksDataSet.xsc">
-      <DependentUpon>RnrBooksDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="RnrBooksDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>RnrBooksDataSet.Designer.vb</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="RnrBooksDataSet.xss">
-      <DependentUpon>RnrBooksDataSet.xsd</DependentUpon>
     </None>
     <None Include="RnrBooksDataSet1.xsc">
       <DependentUpon>RnrBooksDataSet1.xsd</DependentUpon>
