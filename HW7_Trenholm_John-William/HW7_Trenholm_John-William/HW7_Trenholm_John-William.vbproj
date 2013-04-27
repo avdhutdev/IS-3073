@@ -81,13 +81,22 @@
     <Import Include="System.Web.UI.HtmlControls" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="confirmation.aspx" />
     <Content Include="Default.aspx" />
+    <Content Include="review.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="confirmation.aspx.designer.vb">
+      <DependentUpon>confirmation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="confirmation.aspx.vb">
+      <DependentUpon>confirmation.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="Default.aspx.vb">
-      <SubType>ASPXCodeBehind</SubType>
       <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Default.aspx.designer.vb">
       <DependentUpon>Default.aspx</DependentUpon>
@@ -106,6 +115,13 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="review.aspx.designer.vb">
+      <DependentUpon>review.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="review.aspx.vb">
+      <DependentUpon>review.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
