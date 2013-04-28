@@ -3,16 +3,15 @@
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
 
-
-        Dim numTickets1 As integer = Request.QueryString["numTickets"].ToString()
-        Dim cost As Integer
-
-
-        priceLabel.Text = numTickets1 * cost
-
-
-
-
     End Sub
 
+    Private Sub form1_PreRender(ByVal sender As Object, ByVal e As System.EventArgs) Handles form1.PreRender
+        Dim cost As Decimal
+        cost = 15
+        Dim numTickets As Integer
+        numTickets = Request.QueryString("numTickets")
+
+
+        priceLabel.Text = numTickets * cost
+    End Sub
 End Class
